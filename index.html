@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="S.N. Mourya - Java Full Stack Developer Portfolio. Specializing in Spring Boot, React.js, MySQL, REST APIs, and modern web applications." />
+  <meta name="keywords" content="S.N. Mourya, Java Full Stack Developer, Spring Boot, React, MySQL, REST API, Portfolio, Bangalore, Software Engineer" />
+  <meta name="author" content="S.N. Mourya" />
+
+  <title>S.N. Mourya | Java Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Animated Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="glass-nav">
+    <div class="container navbar">
+      <a href="#hero" class="nav-brand">
+        <span style="background: linear-gradient(135deg, #06b6d4, #6366f1); color: white; padding: 4px 10px; border-radius: 8px; font-family: var(--font-mono); font-size: 1rem;">SN</span>
+        <span>MOURYA<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="SN_Mourya_Resume.pdf" download="SN_Mourya_Resume_Java_FullStack.pdf" class="btn btn-primary btn-sm" style="border-radius: 20px; color: #fff;">
+            <span>📥</span> Download CV
+          </a>
+        </li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status">
+              <span class="status-dot"></span>
+              <span>Available for Hire • Open to Relocate (Bengaluru / Pan-India)</span>
+            </div>
+
+            <h1 class="hero-name">
+              Hi, I'm <span class="text-gradient">S.N. Mourya</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span style="color: var(--accent-cyan); font-family: var(--font-mono);">&gt;</span>
+              <span id="typed-role" style="color: #fff; font-weight: 700;"></span>
+              <span class="typed-cursor"></span>
+            </div>
+
+            <p class="hero-bio">
+              Aspiring <strong>Java Full Stack Developer</strong> with hands-on experience architecting full-stack web applications using <strong>React.js</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>. Strong foundation in REST API design, CORS troubleshooting, and Data Structures &amp; Algorithms.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>🚀</span> View Projects
+              </a>
+              <a href="SN_Mourya_Resume.pdf" download="SN_Mourya_Resume_Java_FullStack.pdf" class="btn btn-secondary" style="border-color: var(--accent-cyan);">
+                <span>📥</span> Download Resume
+              </a>
+              <button onclick="openResumeModal()" class="btn btn-secondary">
+                <span>📑</span> View Resume
+              </button>
+            </div>
+
+            <div class="hero-socials">
+              <!-- GitHub -->
+              <a href="https://github.com/snmourya2005" target="_blank" rel="noreferrer" class="social-icon-btn" title="GitHub Profile (@snmourya2005)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/mourya-sn-1011792b6/" target="_blank" rel="noreferrer" class="social-icon-btn" title="LinkedIn Profile (Mourya S.N.)">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <!-- LeetCode -->
+              <a href="https://leetcode.com/u/ytUtdYUYwr/" target="_blank" rel="noreferrer" class="social-icon-btn" title="LeetCode Profile (@ytUtdYUYwr)">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c.058-.087.122-.171.195-.248l4.406-4.708a1.372 1.372 0 0 0-.248-2.158zM18.8 6.516a1.375 1.375 0 0 0-.97.404l-5.632 5.632a1.374 1.374 0 0 0 1.944 1.944l5.633-5.632a1.377 1.377 0 0 0-.975-2.348zM21.5 12.5h-8a1.5 1.5 0 0 0 0 3h8a1.5 1.5 0 0 0 0-3z"/></svg>
+              </a>
+              <!-- Direct Send Email Link -->
+              <a href="mailto:s.n.mourya2005@gmail.com?subject=Job%20Opportunity%20/%20Inquiry%20-%20Java%20Full%20Stack%20Developer&body=Hi%20Mourya,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards," class="social-icon-btn" title="Send Email Direct (s.n.mourya2005@gmail.com)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+              <!-- Direct Call / Phone -->
+              <a href="tel:+918688610728" class="social-icon-btn" title="Call Direct (+91 8688610728)">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </a>
+              <!-- Direct WhatsApp -->
+              <a href="https://wa.me/918688610728?text=Hi%20Mourya,%20I%20reviewed%20your%20Java%20Full%20Stack%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noreferrer" class="social-icon-btn" title="Chat on WhatsApp (+91 8688610728)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right: Photo Portrait & Code Showcase -->
+          <div class="hero-visual">
+            <div class="hero-portrait-wrapper" id="hero-portrait-view">
+              <div class="portrait-glow-border"></div>
+              
+              <!-- Floating Badge Top Left -->
+              <div class="floating-badge floating-badge-top-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                <span>Java &amp; Spring Boot</span>
+              </div>
+
+              <!-- Floating Badge Bottom Right -->
+              <div class="floating-badge floating-badge-bottom-right">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>React.js &amp; MySQL</span>
+              </div>
+
+              <div class="hero-portrait-card">
+                <img src="profile.jpg" alt="S.N. Mourya - Java Full Stack Developer" class="hero-portrait-img" />
+                <div class="portrait-overlay-gradient">
+                  <div>
+                    <div class="portrait-caption-name">S.N. Mourya</div>
+                    <div class="portrait-caption-sub">Java Full Stack Developer • Bengaluru</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View Switcher Tabs -->
+            <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem;">
+              <button id="tab-portrait-btn" class="btn btn-secondary btn-sm" onclick="switchHeroView('portrait')" style="border-radius: 20px; font-size: 0.8rem; background: rgba(6, 182, 212, 0.2); border-color: var(--accent-cyan); color: #fff;">
+                👤 Portrait View
+              </button>
+              <button id="tab-code-btn" class="btn btn-secondary btn-sm" onclick="switchHeroView('code')" style="border-radius: 20px; font-size: 0.8rem;">
+                💻 View Spring Controller
+              </button>
+            </div>
+
+            <!-- Hero Code Card (Hidden initially, accessible via toggle) -->
+            <div class="hero-code-card" id="hero-code-view" style="display: none; margin-top: 1rem;">
+              <div class="code-header">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="code-filename">MouryaController.java</span>
+                <span class="badge badge-spring" style="font-size: 0.7rem;">Spring Boot 3.x</span>
+              </div>
+              <div class="code-body">
+<span class="code-annotation">@RestController</span>
+<span class="code-annotation">@RequestMapping</span>(<span class="code-str">"/api/v1/developer"</span>)
+<span class="code-annotation">@CrossOrigin</span>(origins = <span class="code-str">"*"</span>)
+<span class="code-keyword">public class</span> <span class="code-class">MouryaController</span> {
+
+    <span class="code-annotation">@Autowired</span>
+    <span class="code-keyword">private</span> <span class="code-class">FullStackService</span> <span class="code-var">service</span>;
+
+    <span class="code-annotation">@GetMapping</span>(<span class="code-str">"/profile"</span>)
+    <span class="code-keyword">public</span> <span class="code-class">ResponseEntity</span>&lt;<span class="code-class">Developer</span>&gt; <span class="code-func">getDevProfile</span>() {
+        <span class="code-class">Developer</span> <span class="code-var">dev</span> = <span class="code-keyword">new</span> <span class="code-class">Developer</span>();
+        <span class="code-var">dev</span>.<span class="code-func">setName</span>(<span class="code-str">"S.N. Mourya"</span>);
+        <span class="code-var">dev</span>.<span class="code-func">setStack</span>(<span class="code-class">List</span>.<span class="code-func">of</span>(<span class="code-str">"Java"</span>, <span class="code-str">"Spring Boot"</span>, <span class="code-str">"React"</span>, <span class="code-str">"MySQL"</span>));
+        <span class="code-var">dev</span>.<span class="code-func">setReadyToShip</span>(<span class="code-keyword">true</span>);
+        <span class="code-keyword">return</span> <span class="code-class">ResponseEntity</span>.<span class="code-func">ok</span>(<span class="code-var">dev</span>);
+    }
+}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Highlight Bar -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number text-gradient-spring">40+</span>
+            <span class="stat-label">REST APIs Built &amp; Tested</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-gradient">2+</span>
+            <span class="stat-label">Full Stack Projects Shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-gradient-java">75.5%</span>
+            <span class="stat-label">B.Tech CSE Aggregate</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-gradient">100%</span>
+            <span class="stat-label">E2E Integration Success</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Background &amp; Expertise</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Building resilient backend architectures and responsive user interfaces.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 1rem;">
+              Passionate about shipping <span class="text-gradient">robust full-stack solutions</span>
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+              I am a driven <strong>Java Full Stack Developer</strong> with a solid grounding in Core Java principles (OOP, Collections, Exception Handling, Multithreading, and Java 8 Streams) paired with modern frontend expertise in <strong>React.js</strong>.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+              Having completed a full-stack developer internship at <strong>JSpiders (BTM Layout)</strong>, I have proven experience implementing 40+ REST API endpoints, managing normalized MySQL schemas with Hibernate/JPA, handling CORS policies, and solving algorithmic problems.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎯</span>
+                <div class="highlight-text">
+                  <h4>Backend Reliability</h4>
+                  <p>Clean MVC architecture, JPA repositories, secure REST design</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <div class="highlight-text">
+                  <h4>Frontend Dynamics</h4>
+                  <p>Modern React, Axios interceptors, responsive components</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🗄️</span>
+                <div class="highlight-text">
+                  <h4>Database Design</h4>
+                  <p>Normalized relational schemas in MySQL and Oracle SQL</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🧩</span>
+                <div class="highlight-text">
+                  <h4>Problem Solver</h4>
+                  <p>Data Structures, algorithms, and agile collaboration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Bio Card & Contact Quick-Actions -->
+          <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span>📋</span> Quick Info &amp; Details
+              </h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-muted);">Name</span>
+                  <span style="color: #fff; font-weight: 600;">S.N. Mourya</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-muted);">Role</span>
+                  <span style="color: var(--accent-cyan); font-weight: 600;">Java Full Stack Developer</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-muted);">Location</span>
+                  <span style="color: #fff; font-weight: 500;">Bengaluru, India (Open to Relocate)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-muted);">Education</span>
+                  <span style="color: #fff; font-weight: 500;">B.Tech in CSE (AI &amp; ML) - 75.5%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                  <span style="color: var(--text-muted);">Email</span>
+                  <span style="color: #fff; font-weight: 500; font-family: var(--font-mono); font-size: 0.85rem;">s.n.mourya2005@gmail.com</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: var(--text-muted);">Phone</span>
+                  <span style="color: #fff; font-weight: 500; font-family: var(--font-mono); font-size: 0.85rem;">+91 8688610728</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button onclick="copyToClipboard('s.n.mourya2005@gmail.com', 'Email')" class="btn btn-secondary btn-sm" style="flex: 1;">
+                <span>📋</span> Copy Email
+              </button>
+              <button onclick="copyToClipboard('+918688610728', 'Phone Number')" class="btn btn-secondary btn-sm" style="flex: 1;">
+                <span>📱</span> Copy Phone
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">Extensive toolkit covering frontend development, backend microservices, and databases.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Populated by script.js -->
+        </div>
+
+        <!-- Problem Solving & DSA Strip -->
+        <div style="margin-top: 3.5rem;">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <h3 style="font-size: 1.3rem; color: #fff;">Problem Solving &amp; Data Structures</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.75rem;">Core algorithmic concepts practiced for high-performance software engineering.</p>
+            <a href="https://leetcode.com/u/ytUtdYUYwr/" target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm" style="border-color: rgba(245, 158, 11, 0.4); color: #fbbf24; background: rgba(245, 158, 11, 0.1); border-radius: 20px;">
+              <span>⚡</span> View LeetCode Profile (@ytUtdYUYwr)
+            </a>
+          </div>
+          <div class="dsa-card-grid" id="dsa-container">
+            <!-- Populated by script.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Architectures</h2>
+          <p class="section-desc">Full-stack applications built with Spring Boot, React, and MySQL. Try the interactive demos!</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Industry Journey</span>
+          <h2 class="section-title">Internship Experience</h2>
+          <p class="section-desc">Practical industry experience collaborating on production-ready full stack systems.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Full Stack Developer Intern</h3>
+                  <div class="exp-company">🏢 JSpiders — BTM Layout, Bengaluru</div>
+                </div>
+                <span class="exp-date">Internship</span>
+              </div>
+
+              <ul class="project-bullets" style="margin-top: 1rem;">
+                <li class="project-bullet">
+                  <span class="bullet-dot">▹</span>
+                  <span>Developed full-stack web applications using <strong>React.js</strong> and <strong>Spring Boot</strong> as part of a collaborative agile development team.</span>
+                </li>
+                <li class="project-bullet">
+                  <span class="bullet-dot">▹</span>
+                  <span>Built and thoroughly tested <strong>40+ REST APIs</strong> using Postman, handling complete end-to-end frontend-backend data flow and state management.</span>
+                </li>
+                <li class="project-bullet">
+                  <span class="bullet-dot">▹</span>
+                  <span>Configured <strong>CORS policies</strong> and resolved cross-origin API integration bottlenecks across micro-services.</span>
+                </li>
+                <li class="project-bullet">
+                  <span class="bullet-dot">▹</span>
+                  <span>Designed, executed, and optimized relational <strong>SQL database schemas</strong> to power application CRUD operations.</span>
+                </li>
+              </ul>
+
+              <div style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <span class="badge badge-spring">Spring Boot</span>
+                <span class="badge badge-spring">React.js</span>
+                <span class="badge">Postman (40+ APIs)</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">CORS Troubleshooting</span>
+                <span class="badge">Agile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic &amp; Accreditations</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-desc">Continuous learning, certifications, and academic milestones.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <div>
+            <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>🎓</span> Formal Education
+            </h3>
+            <div id="education-container">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+
+          <div>
+            <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>📜</span> Certifications &amp; Achievements
+            </h3>
+            <div class="cert-list" id="certifications-container">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-desc">Have a role, project idea, or question? Feel free to reach out directly!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Details -->
+          <div class="contact-card-list">
+            <!-- Email Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Email Me Direct</div>
+                  <div class="contact-val" style="font-family: var(--font-mono); font-size: 0.88rem;">s.n.mourya2005@gmail.com</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.4rem;">
+                <a href="mailto:s.n.mourya2005@gmail.com?subject=Job%20Opportunity%20/%20Inquiry%20-%20Java%20Full%20Stack%20Developer&body=Hi%20Mourya,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards," class="btn btn-primary btn-sm" style="color: #fff;">
+                  Send Mail
+                </a>
+                <button onclick="copyToClipboard('s.n.mourya2005@gmail.com', 'Email')" class="btn btn-secondary btn-sm" title="Copy Email">
+                  Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- Phone & WhatsApp Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Call / WhatsApp</div>
+                  <div class="contact-val" style="font-family: var(--font-mono); font-size: 0.88rem;">+91 8688610728</div>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.4rem;">
+                <a href="tel:+918688610728" class="btn btn-secondary btn-sm">
+                  Call
+                </a>
+                <a href="https://wa.me/918688610728?text=Hi%20Mourya,%20I%20reviewed%20your%20Java%20Full%20Stack%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noreferrer" class="btn btn-secondary btn-sm" style="color: #25D366; border-color: rgba(37, 211, 102, 0.4);">
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact-label">Current Location</div>
+                  <div class="contact-val">Bengaluru, Karnataka (Open to Relocate)</div>
+                </div>
+              </div>
+              <span class="badge badge-spring" style="font-size: 0.75rem;">Open</span>
+            </div>
+
+            <div class="card" style="margin-top: 0.5rem; text-align: center;">
+              <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;">Looking for a Full-Stack Engineer?</h4>
+              <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1rem;">
+                I am prepared to immediately contribute to Java, Spring Boot, and React ecosystems.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                <a href="SN_Mourya_Resume.pdf" download="SN_Mourya_Resume_Java_FullStack.pdf" class="btn btn-primary" style="width: 100%;">
+                  <span>📥</span> Download Full Resume (PDF)
+                </a>
+                <button onclick="openResumeModal()" class="btn btn-secondary" style="width: 100%;">
+                  <span>📄</span> Open Resume Sheet
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="card">
+            <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 1rem;">Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma / Recruiter" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" rows="4" class="form-control" placeholder="Hi Mourya, I came across your portfolio and would love to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <span>🚀</span> Send Message Direct
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <div style="font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">
+          S.N. MOURYA
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+          Java Full Stack Developer • Spring Boot &amp; React.js • Bengaluru, India
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a href="#hero" class="btn btn-secondary btn-sm">↑ Back to Top</a>
+        <a href="mailto:s.n.mourya2005@gmail.com" class="btn btn-primary btn-sm">Email Mourya</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE MODALS
+       ======================================================================== -->
+
+  <!-- 1. AI Health Triage Assistant Live Demo Modal -->
+  <div id="chatbot-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.4rem;">🩺</span>
+          <div>
+            <h3 class="modal-title">AI Health Triage &amp; Assessment Engine</h3>
+            <span style="font-size: 0.75rem; color: var(--accent-spring); font-family: var(--font-mono);">Spring Boot Java Rule Engine &amp; AI Service</span>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('chatbot-modal')">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Test the deterministic safety triage engine! Try symptoms like: <em>"chest pain"</em> (Red Flag), <em>"severe fever and headache"</em> (Urgent), or <em>"mild cold"</em> (Self-Care).
+        </p>
+
+        <div class="chat-container">
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-bubble chat-bot">
+              <strong>🩺 Triage Engine:</strong> Welcome! I am the AI Health Triage system built with Spring Boot, Java Rule Engine, and React. What symptoms are you experiencing today?
+            </div>
+          </div>
+
+          <div class="chat-input-area">
+            <input type="text" id="chat-input" class="form-control" placeholder="Describe symptoms (e.g. crushing chest pain, severe fever, mild cold)..." onkeypress="if(event.key==='Enter') sendChatMessage()" />
+            <button class="btn btn-primary btn-sm" onclick="sendChatMessage()">Analyze</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. E-Commerce REST API Explorer Modal -->
+  <div id="api-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.4rem;">🛒</span>
+          <div>
+            <h3 class="modal-title">E-Commerce REST API Explorer</h3>
+            <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">Spring Boot CRUD, Axios &amp; MySQL</span>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('api-modal')">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Click any endpoint below to simulate live Spring Boot controller responses and JSON payloads:
+        </p>
+
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+          <button class="btn btn-secondary btn-sm" onclick="triggerApiRequest('GET_PRODUCTS')">
+            <span class="http-method http-get">GET</span> /products
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="triggerApiRequest('POST_CART')">
+            <span class="http-method http-post">POST</span> /cart/items
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="triggerApiRequest('POST_ORDER')">
+            <span class="http-method http-post">POST</span> /orders/checkout
+          </button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span id="api-current-endpoint" style="font-family: var(--font-mono); font-size: 0.85rem; color: #fff;">GET /api/v1/products</span>
+          <div style="display: flex; gap: 0.5rem;">
+            <span id="api-status-badge" class="http-method http-post">200 OK</span>
+            <span id="api-latency-badge" style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">Latency: 34ms</span>
+          </div>
+        </div>
+
+        <pre class="api-response-box" id="api-response-code">[
+  {
+    "id": 101,
+    "name": "Mechanical Gaming Keyboard",
+    "category": "Electronics",
+    "price": 2999.00,
+    "stock": 45
+  },
+  {
+    "id": 102,
+    "name": "Ergonomic Desk Chair",
+    "category": "Furniture",
+    "price": 8499.00,
+    "stock": 12
+  },
+  {
+    "id": 103,
+    "name": "Wireless Noise Cancelling Headphones",
+    "category": "Audio",
+    "price": 4999.00,
+    "stock": 28
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Resume Modal Sheet -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 750px;">
+      <div class="modal-header">
+        <h3 class="modal-title">📄 S.N. Mourya - Official Resume</h3>
+        <button class="modal-close" onclick="closeModal('resume-modal')">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 1.75rem;">
+        <div style="background: #ffffff; color: #1e293b; padding: 2rem; border-radius: 12px; font-family: var(--font-main);">
+          <div style="border-bottom: 2px solid #0f172a; padding-bottom: 1rem; margin-bottom: 1.25rem;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">S.N. MOURYA</h2>
+            <div style="font-size: 1.05rem; font-weight: 700; color: #0284c7; margin-bottom: 0.5rem;">Java Full Stack Developer</div>
+            <div style="font-size: 0.85rem; color: #475569; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <span>📍 Bengaluru, India (Open to Relocate)</span>
+              <span>📞 +91 8688610728</span>
+              <span>✉️ s.n.mourya2005@gmail.com</span>
+              <span>🔗 github.com/snmourya2005</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <h4 style="font-size: 0.95rem; font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.5rem; text-transform: uppercase; color: #0f172a;">Profile Summary</h4>
+            <p style="font-size: 0.85rem; color: #334155; line-height: 1.5;">
+              Aspiring Java Full Stack Developer with hands-on experience building full-stack web applications using React.js, Spring Boot, and MySQL. Strong grasp of core Java (OOP, Collections, Exception Handling, Multithreading) with practical skills in REST API design, deterministic rule engines, frontend-backend integration, and resolving CORS/API issues. Strong foundation in Data Structures &amp; Algorithms and a track record of shipping production-grade full-stack projects.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <h4 style="font-size: 0.95rem; font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.5rem; text-transform: uppercase; color: #0f172a;">Technical Skills</h4>
+            <div style="font-size: 0.82rem; color: #334155; line-height: 1.6;">
+              <p><strong>Languages:</strong> Java, SQL, JavaScript</p>
+              <p><strong>Core Java:</strong> OOP (Inheritance, Polymorphism, Encapsulation, Abstraction), Collections Framework, Exception Handling, Multithreading, String Handling, Java 8 Streams</p>
+              <p><strong>Frontend:</strong> React.js, JavaScript (ES6+), HTML5, CSS3, Axios, Responsive UI</p>
+              <p><strong>Backend:</strong> Spring Boot, REST APIs, Hibernate/JPA, MVC, Spring AI</p>
+              <p><strong>Databases:</strong> MySQL, Oracle SQL, Database Normalization, Schema Design</p>
+              <p><strong>Cloud &amp; Tools:</strong> Git, GitHub, Postman (40+ APIs tested), Maven, Docker, OpenAPI / Swagger, Agile / Scrum</p>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <h4 style="font-size: 0.95rem; font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.5rem; text-transform: uppercase; color: #0f172a;">Key Projects</h4>
+            
+            <div style="margin-bottom: 0.75rem;">
+              <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.88rem; color: #0f172a;">
+                <span>AI Health Triage &amp; Symptom Assessment Platform</span>
+                <span style="font-size: 0.8rem; color: #0284c7;">Spring Boot, React.js, Java Rule Engine, AI/LLM</span>
+              </div>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; font-size: 0.82rem; color: #334155; line-height: 1.45;">
+                <li>Architected an AI-assisted health triage and symptom assessment platform with natural language symptom extraction and multi-provider AI abstraction (OpenAI, Gemini, Spring AI).</li>
+                <li>Implemented a deterministic Java Rule Engine (HealthRuleEngine) as medical safety authority, eliminating LLM hallucinations and classifying urgency (Emergency Red Flag, Urgent, Self-Care).</li>
+                <li>Developed 100% offline fallback service, Jakarta @Valid input validation, and interactive OpenAPI 3.1 Swagger documentation.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.88rem; color: #0f172a;">
+                <span>Courier Logistics &amp; Shipment Tracking System</span>
+                <span style="font-size: 0.8rem; color: #0284c7;">Spring Boot, React.js, MySQL, JPA, Axios</span>
+              </div>
+              <ul style="padding-left: 1.2rem; margin-top: 0.25rem; font-size: 0.82rem; color: #334155; line-height: 1.45;">
+                <li>Developed a full-stack logistics platform supporting dynamic shipping rate calculations, multi-step booking wizard, customer CRM, and fleet management.</li>
+                <li>Implemented 20+ RESTful APIs in Spring Boot managing consignments, warehouse routing hubs, delivery agent assignments, and payments.</li>
+                <li>Built real-time package tracking UI with interactive visual milestone steppers (Order Placed &rarr; In Transit &rarr; Delivered) and printable consignment receipts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <h4 style="font-size: 0.95rem; font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.5rem; text-transform: uppercase; color: #0f172a;">Work Experience</h4>
+            <div style="font-size: 0.83rem; color: #334155;">
+              <div style="display: flex; justify-content: space-between; font-weight: 700;">
+                <span>Full Stack Developer Intern — JSpiders (BTM)</span>
+                <span>Internship</span>
+              </div>
+              <ul style="padding-left: 1.2rem; margin-top: 0.35rem; line-height: 1.4;">
+                <li>Developed full-stack applications using React.js and Spring Boot as part of a collaborative development team.</li>
+                <li>Built and tested 40+ REST APIs using Postman; handled frontend-backend integration end to end.</li>
+                <li>Resolved CORS and API connectivity issues, and worked with SQL databases to support application data needs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size: 0.95rem; font-weight: 800; border-bottom: 1px solid #cbd5e1; padding-bottom: 0.25rem; margin-bottom: 0.5rem; text-transform: uppercase; color: #0f172a;">Education &amp; Certifications</h4>
+            <div style="font-size: 0.83rem; color: #334155;">
+              <p><strong>B.Tech in CSE (AI &amp; ML) (2022–2026):</strong> ALITS, Anantapur — Aggregate: 75.5%</p>
+              <p><strong>Certifications:</strong> Java Full Stack (Udemy), AI-ML (EduSkills), Prompt Eng (ExcelR), SIH Participant</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.25rem; display: flex; justify-content: flex-end; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="SN_Mourya_Resume.pdf" download="SN_Mourya_Resume_Java_FullStack.pdf" class="btn btn-primary btn-sm" style="color: #fff;">
+            <span>📥</span> Download PDF File
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="window.print()">
+            <span>🖨️</span> Print / Save as PDF
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="closeModal('resume-modal')">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
