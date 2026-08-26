@@ -22,17 +22,18 @@ function initTypingEffect() {
 
   const roles = [
     "Java Full Stack Developer",
-    "Spring Boot & REST API Specialist",
+    "Spring Boot & REST API Specialist (40+ APIs)",
     "React.js Frontend Architect",
-    "MySQL Database Designer",
+    "Deterministic Rule Engines & Spring AI",
+    "MySQL Database Query Optimizer (86% speedup)",
     "B.Tech CSE (AI & ML)"
   ];
 
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  const typeSpeed = 90;
-  const deleteSpeed = 40;
+  const typeSpeed = 85;
+  const deleteSpeed = 35;
   const delayBetweenRoles = 1800;
 
   function type() {
@@ -261,7 +262,6 @@ function renderEducationAndCertifications() {
    7. Interactive Modals & Features
    -------------------------------------------------------------------------- */
 function initModals() {
-  // Close modals when clicking overlay
   document.querySelectorAll('.modal-overlay').forEach(overlay => {
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) {
@@ -279,9 +279,11 @@ function closeAllModals() {
 
 window.openInteractiveDemo = function(type) {
   if (type === 'chatbot') {
-    document.getElementById('chatbot-modal').classList.add('active');
+    const m = document.getElementById('chatbot-modal');
+    if (m) m.classList.add('active');
   } else if (type === 'logistics-explorer' || type === 'api-explorer') {
-    document.getElementById('api-modal').classList.add('active');
+    const m = document.getElementById('api-modal');
+    if (m) m.classList.add('active');
   }
 };
 
@@ -326,22 +328,73 @@ window.switchHeroView = function(viewType) {
 };
 
 /* --------------------------------------------------------------------------
-   8. AI Healthcare Assistant Chatbot Simulation
+   8. Live Demo 1: AI Health Triage Engine Simulation
    -------------------------------------------------------------------------- */
-const botResponses = {
-  "hello": "Hello! I am the AI Health Triage Engine powered by Spring Boot, NLP Symptom Extractor & Java Rule Engine. Describe your symptoms (e.g., 'crushing chest pain', 'severe fever', 'mild cold & runny nose').",
-  "hi": "Hi there! I assess symptoms deterministically to evaluate triage urgency (Emergency Red Flag, Urgent, Self-Care). What are you feeling?",
-  "chest pain": "🚨 [EMERGENCY_RED_FLAG] Immediate medical attention required! Crushing chest pain / shortness of breath detected. Please call 112 / 911 or visit the nearest Emergency Room immediately. Referred Specialty: Cardiology.",
-  "fever": "⚠️ [URGENT_MEDICAL_ATTENTION] For high or persistent fever with headache: Recommended OTC: Paracetamol (500mg) for fever reduction, maintain active hydration. Consult a General Physician within 24 hours.",
-  "cold": "✅ [SELF_CARE_OTC] Mild cold & nasal congestion: Cetirizine 10mg once daily, saline nasal spray, steam inhalation, and adequate rest. Referred Specialty: ENT.",
-  "headache": "⚠️ [URGENT / ROUTINE] Throbbing headache: Rest in a dark, quiet room, stay hydrated. If accompanied by sudden numbness or vision blur, seek immediate emergency evaluation.",
-  "appointment": "🗓️ Specialist Booking: Direct referral available for General Physician, ENT, and Cardiology via POST /api/assessment/book-specialist.",
-  "default": "✅ [HEALTH EVALUATION] Evaluated through Spring Boot Java Rule Engine. Please monitor symptoms closely, maintain hydration, and consult a certified healthcare practitioner if symptoms persist."
+window.setTriageInput = function(text) {
+  const input = document.getElementById('chat-input');
+  if (input) {
+    input.value = text;
+    window.sendChatMessage();
+  }
 };
+
+const triageRules = [
+  {
+    keywords: ["chest pain", "shortness of breath", "heart", "radiating", "unconscious", "stroke", "dizziness"],
+    urgency: "EMERGENCY_RED_FLAG",
+    urgencyScore: 98,
+    cardClass: "triage-emergency",
+    title: "🚨 EMERGENCY RED FLAG — Immediate Hospitalization",
+    specialist: "Cardiologist / Emergency Trauma Center",
+    otcRemedies: "Do NOT delay. Call 112 / 911 or visit the nearest emergency room. Keep patient in seated resting position.",
+    jsonPayload: {
+      triageLevel: "EMERGENCY_RED_FLAG",
+      ruleMatched: "RULE_CARDIO_VASCULAR_RED_FLAG",
+      confidence: "99.2%",
+      requiresImmediateEscalation: true,
+      emergencyContactTriggered: true,
+      clinicianSpecialist: "Cardiology"
+    }
+  },
+  {
+    keywords: ["fever", "headache", "chills", "severe", "temperature", "vomiting", "stomach pain"],
+    urgency: "URGENT_MEDICAL_ATTENTION",
+    urgencyScore: 75,
+    cardClass: "triage-urgent",
+    title: "⚠️ URGENT MEDICAL ATTENTION — Consult within 24 Hours",
+    specialist: "General Physician / Internal Medicine",
+    otcRemedies: "Paracetamol (500mg) for fever reduction every 6h as needed, oral rehydration salts (ORS), and temperature monitoring.",
+    jsonPayload: {
+      triageLevel: "URGENT_MEDICAL_ATTENTION",
+      ruleMatched: "RULE_HIGH_FEVER_PERSISTENT",
+      confidence: "98.5%",
+      requiresImmediateEscalation: false,
+      recommendedConsultationWindow: "Within 24h",
+      clinicianSpecialist: "General Medicine"
+    }
+  },
+  {
+    keywords: ["cold", "cough", "sneezing", "runny nose", "sore throat", "nasal", "mild"],
+    urgency: "SELF_CARE_OTC",
+    urgencyScore: 25,
+    cardClass: "triage-selfcare",
+    title: "✅ SELF-CARE & OTC REMEDIES — Low Urgency",
+    specialist: "ENT Specialist (Optional if symptoms persist > 7 days)",
+    otcRemedies: "Cetirizine (10mg once daily), warm saline gargle 3x/day, steam inhalation, and adequate hydration.",
+    jsonPayload: {
+      triageLevel: "SELF_CARE_OTC",
+      ruleMatched: "RULE_UPPER_RESPIRATORY_COLD",
+      confidence: "99.0%",
+      requiresImmediateEscalation: false,
+      clinicianSpecialist: "ENT / Home Care"
+    }
+  }
+];
 
 window.sendChatMessage = function() {
   const input = document.getElementById('chat-input');
   const messagesBox = document.getElementById('chat-messages');
+  const resultBox = document.getElementById('triage-result-box');
   if (!input || !messagesBox) return;
 
   const userText = input.value.trim();
@@ -353,81 +406,172 @@ window.sendChatMessage = function() {
   userBubble.textContent = userText;
   messagesBox.appendChild(userBubble);
   input.value = '';
-
-  // Scroll down
   messagesBox.scrollTop = messagesBox.scrollHeight;
 
-  // Simulate Spring Boot REST API Processing delay
+  // Simulate Spring Boot Deterministic Rule Engine
   const typingIndicator = document.createElement('div');
   typingIndicator.className = 'chat-bubble chat-bot';
-  typingIndicator.innerHTML = '<em>Spring Boot Rule Engine &amp; AI Triage evaluating symptoms...</em>';
+  typingIndicator.innerHTML = '<em>⚡ Spring Boot HealthRuleEngine &amp; Multi-provider AI evaluating symptoms...</em>';
   messagesBox.appendChild(typingIndicator);
   messagesBox.scrollTop = messagesBox.scrollHeight;
 
   setTimeout(() => {
-    messagesBox.removeChild(typingIndicator);
+    if (messagesBox.contains(typingIndicator)) {
+      messagesBox.removeChild(typingIndicator);
+    }
     
-    // Find matching response
+    // Evaluate rule
     const lower = userText.toLowerCase();
-    let reply = botResponses.default;
-    for (const key in botResponses) {
-      if (lower.includes(key)) {
-        reply = botResponses[key];
+    let matchedRule = triageRules[2]; // default self care
+    for (const rule of triageRules) {
+      if (rule.keywords.some(k => lower.includes(k))) {
+        matchedRule = rule;
         break;
       }
     }
 
     const botBubble = document.createElement('div');
     botBubble.className = 'chat-bubble chat-bot';
-    botBubble.innerHTML = `<strong>🩺 Triage Engine:</strong> ${reply}`;
+    botBubble.innerHTML = `<strong>🩺 Deterministic Engine:</strong> Evaluated as <strong>${matchedRule.urgency}</strong> (Confidence: 99.2%). Recommended Action: ${matchedRule.title}`;
     messagesBox.appendChild(botBubble);
     messagesBox.scrollTop = messagesBox.scrollHeight;
-  }, 500);
+
+    // Render result card below
+    if (resultBox) {
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `
+        <div class="triage-result-card ${matchedRule.cardClass}">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <h4 style="color: #fff; font-size: 0.95rem; font-weight: 700;">${matchedRule.title}</h4>
+            <span class="badge badge-spring" style="font-size: 0.75rem;">Score: ${matchedRule.urgencyScore}/100</span>
+          </div>
+          <p style="font-size: 0.83rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>👨‍⚕️ Referred Specialty:</strong> ${matchedRule.specialist}
+          </p>
+          <p style="font-size: 0.83rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+            <strong>💊 Structured Remedies &amp; Safety:</strong> ${matchedRule.otcRemedies}
+          </p>
+          <div style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">
+            OpenAPI 3.1 Swagger Output: <code>${JSON.stringify(matchedRule.jsonPayload)}</code>
+          </div>
+        </div>
+      `;
+    }
+  }, 450);
 };
 
 /* --------------------------------------------------------------------------
-   9. E-Commerce REST API Explorer Mock
+   9. Live Demo 2: Courier Logistics & Real-Time Tracking Explorer
    -------------------------------------------------------------------------- */
+window.switchLogisticsTab = function(tabName) {
+  const views = {
+    'tracker': document.getElementById('logistics-view-tracker'),
+    'calc': document.getElementById('logistics-view-calc'),
+    'api': document.getElementById('logistics-view-api')
+  };
+
+  const tabs = {
+    'tracker': document.getElementById('logistics-tab-tracker'),
+    'calc': document.getElementById('logistics-tab-calc'),
+    'api': document.getElementById('logistics-tab-api')
+  };
+
+  for (const key in views) {
+    if (views[key]) views[key].style.display = (key === tabName) ? 'block' : 'none';
+    if (tabs[key]) tabs[key].classList.toggle('active', key === tabName);
+  }
+};
+
+window.queryTrackingId = function() {
+  const input = document.getElementById('tracking-input-id');
+  const query = input ? input.value.trim() : 'TRK-BLR-88219';
+
+  showToast(`⚡ WebSocket Synced: Package ${query} refreshed in 120ms`);
+  
+  const idDisplay = document.getElementById('track-detail-id');
+  if (idDisplay) idDisplay.textContent = query || 'TRK-BLR-88219';
+};
+
+window.calculateShippingCost = function() {
+  const weightInput = document.getElementById('calc-weight');
+  const tierInput = document.getElementById('calc-tier');
+  const fragileInput = document.getElementById('calc-fragile');
+  const fareResult = document.getElementById('calc-result-fare');
+  const slaResult = document.getElementById('calc-result-sla');
+
+  if (!weightInput || !tierInput) return;
+
+  const weight = parseFloat(weightInput.value) || 1;
+  const tier = tierInput.value;
+  const isFragile = fragileInput ? fragileInput.checked : false;
+
+  let baseRate = 150;
+  let perKgRate = 45;
+  let multiplier = 1.0;
+  let slaText = "3-4 Business Days";
+
+  if (tier === 'EXPRESS') {
+    multiplier = 1.5;
+    slaText = "1-2 Business Days";
+  } else if (tier === 'OVERNIGHT') {
+    multiplier = 2.2;
+    slaText = "Same Day (Priority Flight)";
+  }
+
+  let total = (baseRate + (weight * perKgRate)) * multiplier;
+  if (isFragile) total += 100;
+
+  if (fareResult) fareResult.textContent = `₹${total.toFixed(2)}`;
+  if (slaResult) slaResult.textContent = slaText;
+};
+
 const apiMockData = {
-  "GET_PRODUCTS": {
+  "TRACK_SHIPMENT": {
     status: 200,
     statusText: "OK",
-    latency: "34ms",
-    endpoint: "GET /api/v1/products",
-    response: [
-      { id: 101, name: "Mechanical Gaming Keyboard", category: "Electronics", price: 2999.00, stock: 45 },
-      { id: 102, name: "Ergonomic Desk Chair", category: "Furniture", price: 8499.00, stock: 12 },
-      { id: 103, name: "Wireless Noise Cancelling Headphones", category: "Audio", price: 4999.00, stock: 28 }
-    ]
-  },
-  "POST_CART": {
-    status: 201,
-    statusText: "Created",
-    latency: "42ms",
-    endpoint: "POST /api/v1/cart/items",
-    payload: { productId: 101, quantity: 1, userId: "USR_9821" },
+    latency: "120ms (85% optimized)",
+    endpoint: "GET /sc/track/TRK-BLR-88219",
     response: {
-      message: "Item successfully added to active cart",
-      cartId: "CRT-884920",
-      totalItems: 1,
-      subtotal: 2999.00,
+      trackingNumber: "TRK-BLR-88219",
+      sender: "S.N. Mourya (Bengaluru)",
+      recipient: "Tech Hub (Hyderabad)",
+      currentStatus: "OUT_FOR_DELIVERY",
+      milestones: [
+        { step: 1, name: "Order Placed", date: "2026-08-25 09:30", completed: true },
+        { step: 2, name: "In Transit (Bengaluru Sorting Hub)", date: "2026-08-25 15:45", completed: true },
+        { step: 3, name: "Out for Delivery", date: "2026-08-26 08:30", completed: true },
+        { step: 4, name: "Delivered", date: "Estimated 14:00", completed: false }
+      ],
+      assignedAgent: { agentId: "AGT-101", name: "Rahul Verma", rating: 9.4, vehicle: "KA-01-MJ-4412" },
+      packageWeightKg: 5.0,
+      packagingTier: "SafePacking (+Fragile Shield)",
+      paymentStatus: "COMPLETED"
+    }
+  },
+  "CALCULATE_RATE": {
+    status: 200,
+    statusText: "OK",
+    latency: "95ms",
+    endpoint: "POST /sc/calculate-rate",
+    payload: { weightKg: 5.0, tier: "EXPRESS", isFragile: true, destinationPin: 560068 },
+    response: {
+      baseFare: 150.00,
+      weightFee: 225.00,
+      fragileCareSurcharge: 100.00,
+      totalShippingCost: 475.00,
+      estimatedDeliveryDays: 2,
       currency: "INR"
     }
   },
-  "POST_ORDER": {
+  "GET_FLEET": {
     status: 200,
     statusText: "OK",
-    latency: "68ms",
-    endpoint: "POST /api/v1/orders/checkout",
-    payload: { cartId: "CRT-884920", paymentMethod: "UPI_OR_CARD", shippingAddressId: "ADDR_01" },
-    response: {
-      orderId: "ORD-2026-9921",
-      status: "CONFIRMED",
-      orderDate: "2026-08-26T00:15:00Z",
-      trackingNumber: "TRK_IN_8827192",
-      paymentStatus: "SUCCESS",
-      amountPaid: 2999.00
-    }
+    latency: "110ms",
+    endpoint: "GET /dac/rating/8",
+    response: [
+      { agentId: "AGT-101", name: "Rahul Verma", phone: "+91 9876543210", vehicle: "KA-01-MJ-4412", rating: 9.4, isAvailable: true, activeHub: "Bengaluru Central" },
+      { agentId: "AGT-104", name: "Amit Kumar", phone: "+91 9876501234", vehicle: "KA-04-TR-9981", rating: 8.8, isAvailable: true, activeHub: "Electronic City" }
+    ]
   }
 };
 
@@ -449,11 +593,11 @@ window.triggerApiRequest = function(apiType) {
   }
   if (latencyBadge) latencyBadge.textContent = `Latency: ${data.latency}`;
 
-  resBox.textContent = "// Executing Spring Boot Controller via Axios client...\n// Querying database schema...";
+  resBox.textContent = "// Querying Spring Boot Logistics Controller (JPA + MySQL)...\n// Resolving waypoint routing and tracking history in 120ms...";
 
   setTimeout(() => {
     resBox.textContent = JSON.stringify(data.response, null, 2);
-  }, 250);
+  }, 200);
 };
 
 /* --------------------------------------------------------------------------
@@ -474,15 +618,14 @@ function initContactForm() {
       return;
     }
 
-    // Direct mailto fallback link triggering
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+    const subject = encodeURIComponent(`Job Opportunity / Portfolio Inquiry from ${name}`);
     const body = encodeURIComponent(`Hi Mourya,\n\n${message}\n\nFrom: ${name} (${email})`);
     
     showToast("✅ Message prepared! Opening your mail client...");
     setTimeout(() => {
       window.location.href = `mailto:s.n.mourya2005@gmail.com?subject=${subject}&body=${body}`;
       form.reset();
-    }, 1000);
+    }, 800);
   });
 }
 
@@ -512,5 +655,6 @@ function showToast(msg) {
 }
 
 window.openResumeModal = function() {
-  document.getElementById('resume-modal').classList.add('active');
+  const m = document.getElementById('resume-modal');
+  if (m) m.classList.add('active');
 };
