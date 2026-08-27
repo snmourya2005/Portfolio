@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Resume data for S.N. Mourya (Quantified & Updated)
+// Resume data for S.N. Mourya (Refined & Updated)
 const profile = {
   name: "S.N. MOURYA",
   role: "Java Full Stack Developer",
@@ -10,14 +10,14 @@ const profile = {
   github: "https://github.com/snmourya2005",
   linkedin: "https://www.linkedin.com/in/mourya-sn-1011792b6/",
   leetcode: "https://leetcode.com/u/ytUtdYUYwr/",
-  summary: "Results-driven Java Full Stack Developer with hands-on experience designing and shipping 2+ production-grade full-stack web applications. Strong expertise in building scalable backend systems with Spring Boot REST APIs and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks (40% reduction in API response time), implement deterministic systems for mission-critical applications, and deliver end-to-end solutions from architecture to deployment. Solid foundation in Data Structures & Algorithms with proficiency in core Java (OOP, Multithreading, Collections).",
+  summary: "Results-driven Java Full Stack Developer with hands-on experience designing and shipping 2+ production-grade full-stack web applications. Strong expertise in building scalable backend systems with Spring Boot REST APIs and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks, implement deterministic systems for mission-critical applications, and deliver end-to-end solutions from architecture to deployment. Solid foundation in Data Structures & Algorithms with proficiency in core Java (OOP, Multithreading, Collections).",
   skills: {
     languages: ["Java", "SQL", "JavaScript", "HTML5", "CSS3"],
     coreJava: ["OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)", "Collections Framework", "Exception Handling", "Multithreading", "Streams", "String Handling"],
     frontend: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Axios", "State Management", "Responsive Design"],
     backend: ["Spring Boot", "RESTful APIs", "Spring Data JPA", "Hibernate/JPA", "MVC Architecture", "Spring AI"],
     databases: ["MySQL", "Oracle SQL", "Database Normalization", "Query Optimization", "Relational Schema Modeling"],
-    tools: ["Git", "GitHub", "Postman (API Testing)", "Maven", "Docker", "OpenAPI/Swagger", "AWS (Basics)", "Agile/SCRUM"]
+    tools: ["Git", "GitHub", "Postman (90+ APIs Tested)", "Maven", "Docker", "OpenAPI/Swagger", "AWS (Basics)", "Agile/SCRUM"]
   },
   projects: [
     {
@@ -25,10 +25,10 @@ const profile = {
       stack: "Spring Boot, React.js, Java Rule Engine, AI/LLM Integration, OpenAPI/Swagger, Docker",
       badge: "Featured AI & Full-Stack",
       points: [
-        "Architected enterprise-grade AI health triage platform processing 500+ daily symptom queries; designed multi-provider AI abstraction layer supporting OpenAI, Gemini, and Spring AI with seamless fallback mechanisms.",
-        "Engineered deterministic Java Rule Engine (HealthRuleEngine) eliminating 100% of LLM hallucinations; implemented 15+ medical classification rules achieving 99.2% accuracy in triage urgency classification (Emergency, Urgent, Self-Care).",
-        "Built 100% offline fallback service with Jakarta @Valid input validation ensuring zero service downtime; created interactive OpenAPI 3.1 Swagger documentation reducing API integration time from 2 days to 30 minutes.",
-        "Developed responsive React UI with interactive triage cards, structured home remedies database, and specialist doctor referrals; optimized frontend load time to 1.2s (67% improvement), improving user retention by 42%."
+        "Architected enterprise-grade AI health triage platform; designed multi-provider AI abstraction layer supporting OpenAI, Gemini, and Spring AI with seamless fallback mechanisms.",
+        "Engineered deterministic Java Rule Engine (HealthRuleEngine) eliminating 100% of LLM hallucinations; implemented 15+ medical classification rules for robust triage urgency classification (Emergency, Urgent, Self-Care).",
+        "Built 100% offline fallback service with Jakarta @Valid input validation ensuring zero service downtime; created interactive OpenAPI 3.1 Swagger documentation reducing API integration time.",
+        "Developed responsive React UI with interactive triage cards, structured home remedies database, and specialist doctor referrals; optimized frontend load time to 1.2s for frictionless interaction."
       ]
     },
     {
@@ -36,10 +36,10 @@ const profile = {
       stack: "Spring Boot, React.js, MySQL, Hibernate/JPA, REST APIs, Axios, WebSocket",
       badge: "Full-Stack Enterprise Logistics",
       points: [
-        "Developed full-stack logistics platform handling 10,000+ daily shipments; designed dynamic pricing engine calculating 50+ rate factors, reducing pricing errors by 98% and customer support tickets by 35%.",
-        "Implemented 20+ RESTful APIs with consistent error handling and request validation; optimized API response time from 800ms to 120ms (85% improvement) through database query optimization and caching strategies.",
-        "Built real-time package tracking UI with interactive milestone steppers (Order Placed → In Transit → Delivered); implemented WebSocket communication reducing tracking update latency from 5s to 200ms, increasing user satisfaction from 78% to 94%.",
-        "Designed normalized MySQL relational schema supporting concurrent traffic for 5,000+ users; implemented strategic database indexing improving complex join query performance by 55% and reducing server load by 40%."
+        "Developed full-stack logistics platform; designed dynamic pricing engine calculating 50+ rate factors, reducing pricing errors and operational support overhead.",
+        "Implemented 20+ RESTful APIs with consistent error handling and request validation; optimized API response time from 800ms to 120ms through database query optimization and caching strategies.",
+        "Built real-time package tracking UI with interactive milestone steppers (Order Placed → In Transit → Delivered); implemented WebSocket communication reducing tracking update latency from 5s to 200ms.",
+        "Designed normalized MySQL relational schema supporting high concurrent throughput; implemented strategic database indexing improving complex join query performance and reducing server load."
       ]
     }
   ],
@@ -48,9 +48,9 @@ const profile = {
     company: "JSpiders (BTM Layout, Bengaluru)",
     duration: "6 months",
     points: [
-      "Developed 5 full-stack web applications in agile SCRUM sprints collaborating with cross-functional teams; shipped production-ready features affecting 2,000+ users across multiple web applications.",
-      "Built, tested, and documented 40+ REST APIs using Postman; achieved 95% API test coverage and identified critical CORS/authentication bottlenecks, reducing integration bugs by 60%.",
-      "Optimized database queries and implemented strategic indexing, reducing average query response time from 2.5s to 350ms (86% improvement); led code reviews ensuring adherence to REST API best practices."
+      "Developed 5 full-stack web applications in agile SCRUM sprints collaborating with cross-functional teams; shipped production-ready features across multiple web applications.",
+      "Built, tested, and documented 90+ REST APIs using Postman; achieved comprehensive API test coverage and resolved critical CORS/authentication bottlenecks, reducing integration bugs.",
+      "Optimized database queries and implemented strategic indexing, significantly improving database query response times; led code reviews ensuring adherence to REST API best practices."
     ]
   },
   education: {

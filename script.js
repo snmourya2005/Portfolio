@@ -22,10 +22,10 @@ function initTypingEffect() {
 
   const roles = [
     "Java Full Stack Developer",
-    "Spring Boot & REST API Specialist (40+ APIs)",
+    "Spring Boot & REST API Specialist (90+ APIs)",
     "React.js Frontend Architect",
     "Deterministic Rule Engines & Spring AI",
-    "MySQL Database Query Optimizer (86% speedup)",
+    "MySQL Database Query & Schema Optimizer",
     "B.Tech CSE (AI & ML)"
   ];
 
@@ -179,12 +179,12 @@ function renderProjects() {
 
     const metricHighlight = project.id === 'healthcare-bot'
       ? `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
-           <span class="badge badge-spring" style="font-size: 0.75rem;">🛡️ 99.2% Triage Accuracy</span>
-           <span class="badge" style="font-size: 0.75rem;">⚡ 1.2s Load Time (67% Boost)</span>
+           <span class="badge badge-spring" style="font-size: 0.75rem;">🛡️ Deterministic Rule Safety</span>
+           <span class="badge" style="font-size: 0.75rem;">⚡ 1.2s Load Time</span>
          </div>`
       : `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
-           <span class="badge badge-spring" style="font-size: 0.75rem;">📦 10,000+ Daily Shipments</span>
-           <span class="badge" style="font-size: 0.75rem;">⚡ 120ms API Latency (85% Boost)</span>
+           <span class="badge badge-spring" style="font-size: 0.75rem;">📦 Real-Time Logistics Tracking</span>
+           <span class="badge" style="font-size: 0.75rem;">⚡ 120ms Backend Latency</span>
          </div>`;
 
     card.innerHTML = `
@@ -376,7 +376,7 @@ const triageRules = [
     jsonPayload: {
       triageLevel: "EMERGENCY_RED_FLAG",
       ruleMatched: "RULE_CARDIO_VASCULAR_RED_FLAG",
-      confidence: "99.2%",
+      confidence: "Deterministic Verified",
       requiresImmediateEscalation: true,
       emergencyContactTriggered: true,
       clinicianSpecialist: "Cardiology"
@@ -393,7 +393,7 @@ const triageRules = [
     jsonPayload: {
       triageLevel: "URGENT_MEDICAL_ATTENTION",
       ruleMatched: "RULE_HIGH_FEVER_PERSISTENT",
-      confidence: "98.5%",
+      confidence: "Deterministic Verified",
       requiresImmediateEscalation: false,
       recommendedConsultationWindow: "Within 24h",
       clinicianSpecialist: "General Medicine"
@@ -410,7 +410,7 @@ const triageRules = [
     jsonPayload: {
       triageLevel: "SELF_CARE_OTC",
       ruleMatched: "RULE_UPPER_RESPIRATORY_COLD",
-      confidence: "99.0%",
+      confidence: "Deterministic Verified",
       requiresImmediateEscalation: false,
       clinicianSpecialist: "ENT / Home Care"
     }
@@ -458,7 +458,7 @@ window.sendChatMessage = function() {
 
     const botBubble = document.createElement('div');
     botBubble.className = 'chat-bubble chat-bot';
-    botBubble.innerHTML = `<strong>🩺 Deterministic Engine:</strong> Evaluated as <strong>${matchedRule.urgency}</strong> (Confidence: 99.2%). Recommended Action: ${matchedRule.title}`;
+    botBubble.innerHTML = `<strong>🩺 Deterministic Engine:</strong> Evaluated as <strong>${matchedRule.urgency}</strong>. Recommended Action: ${matchedRule.title}`;
     messagesBox.appendChild(botBubble);
     messagesBox.scrollTop = messagesBox.scrollHeight;
 
@@ -555,7 +555,7 @@ const apiMockData = {
   "TRACK_SHIPMENT": {
     status: 200,
     statusText: "OK",
-    latency: "120ms (85% optimized)",
+    latency: "120ms",
     endpoint: "GET /sc/track/TRK-BLR-88219",
     response: {
       trackingNumber: "TRK-BLR-88219",

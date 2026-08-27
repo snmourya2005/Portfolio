@@ -1,6 +1,6 @@
 %PDF-1.4
 1 0 obj
-<< /Length 7851 >>
+<< /Length 7828 >>
 stream
 0.02 0.52 0.78 rg 36 782 523 3 re f
 BT /F2 20 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 794 Tm (S.N. MOURYA) Tj ET
@@ -12,8 +12,8 @@ BT /F2 10 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 722 Tm (PROFILE) Tj ET
 0.02 0.52 0.78 RG 1 w 36 719 m 559 719 l S
 BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 707 Tm (Results-driven Java Full Stack Developer with hands-on experience designing and shipping 2+ production-grade) Tj ET
 BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 696.5 Tm (full-stack web applications. Strong expertise in building scalable backend systems with Spring Boot REST APIs) Tj ET
-BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 686 Tm (and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks \(40% reduction in API) Tj ET
-BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 675.5 Tm (response time\), implement deterministic systems for mission-critical applications, and deliver end-to-end solutions.) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 686 Tm (and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks, implement deterministic) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 675.5 Tm (systems for mission-critical applications, and deliver end-to-end solutions from architecture to deployment.) Tj ET
 BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 36 665 Tm (Solid foundation in Data Structures & Algorithms with proficiency in core Java \(OOP, Multithreading, Collections\).) Tj ET
 BT /F2 10 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 650.5 Tm (TECHNICAL SKILLS) Tj ET
 0.02 0.52 0.78 RG 1 w 36 647.5 m 559 647.5 l S
@@ -28,15 +28,15 @@ BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 120 604 Tm (Spring Boot, RESTful APIs, Sprin
 BT /F2 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 36 593.5 Tm (Databases:) Tj ET
 BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 120 593.5 Tm (MySQL, Oracle SQL, Database Normalization, Query Optimization, Relational Schema Modeling) Tj ET
 BT /F2 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 36 583 Tm (Tools & DevOps:) Tj ET
-BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 120 583 Tm (Git, GitHub, Postman \(API Testing\), Maven, Docker, OpenAPI/Swagger, AWS \(Basics\), Agile/SCRUM) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 1 0 0 1 120 583 Tm (Git, GitHub, Postman \(90+ APIs Tested\), Maven, Docker, OpenAPI/Swagger, AWS \(Basics\), Agile/SCRUM) Tj ET
 BT /F2 10 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 568.5 Tm (PROJECTS) Tj ET
 0.02 0.52 0.78 RG 1 w 36 565.5 m 559 565.5 l S
 BT /F2 8.5 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 553.5 Tm (AI Health Triage & Symptom Assessment Platform) Tj ET
 BT /F3 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 305 553.5 Tm (Spring Boot, React.js, Java Rule Engine, AI/LLM, Docker) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 542.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 542.5 Tm (Architected AI health triage platform processing 500+ daily symptom queries with multi-provider AI abstraction layer.) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 542.5 Tm (Architected enterprise-grade AI health triage platform with multi-provider AI abstraction layer \(OpenAI, Spring AI\).) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 532.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 532.5 Tm (Engineered deterministic Java Rule Engine \(HealthRuleEngine\) eliminating 100% LLM hallucinations \(99.2% accuracy\).) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 532.5 Tm (Engineered deterministic Java Rule Engine \(HealthRuleEngine\) eliminating 100% LLM hallucinations for medical triage.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 522.5 Tm (>) Tj ET
 BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 522.5 Tm (Built 100% offline fallback service with Jakarta @Valid input validation and OpenAPI 3.1 Swagger documentation.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 512.5 Tm (>) Tj ET
@@ -44,23 +44,23 @@ BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 512.5 Tm (Developed responsive React UI
 BT /F2 8.5 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 498.5 Tm (Courier Logistics & Shipment Tracking System) Tj ET
 BT /F3 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 305 498.5 Tm (Spring Boot, React.js, MySQL, JPA, REST APIs, Axios) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 487.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 487.5 Tm (Developed full-stack logistics platform handling 10,000+ daily shipments; designed dynamic pricing engine \(50+ factors\).) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 487.5 Tm (Developed full-stack logistics platform; designed dynamic pricing engine calculating 50+ rate factors.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 477.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 477.5 Tm (Implemented 20+ RESTful APIs; optimized API response time from 800ms to 120ms \(85% improvement\) via database indexing.) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 477.5 Tm (Implemented 20+ RESTful APIs; optimized API response time to 120ms latency through database query indexing.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 467.5 Tm (>) Tj ET
 BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 467.5 Tm (Built real-time package tracking UI with visual milestone steppers; reduced WebSocket latency from 5s to 200ms.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 457.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 457.5 Tm (Designed normalized MySQL schema for 5,000+ concurrent users; improved complex join queries by 55%.) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 457.5 Tm (Designed normalized MySQL relational schema supporting high concurrent throughput and complex join optimization.) Tj ET
 BT /F2 10 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 443.5 Tm (INTERNSHIP EXPERIENCE) Tj ET
 0.02 0.52 0.78 RG 1 w 36 440.5 m 559 440.5 l S
 BT /F2 8.5 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 428.5 Tm (Full Stack Developer Intern  JSpiders \(BTM Layout, Bengaluru\)) Tj ET
 BT /F1 7.5 Tf 0.4 0.45 0.5 rg 1 0 0 1 480 428.5 Tm (6 months) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 417.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 417.5 Tm (Developed 5 full-stack web applications in agile SCRUM sprints affecting 2,000+ users across multiple apps.) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 417.5 Tm (Developed 5 full-stack web applications in agile SCRUM sprints collaborating with cross-functional teams.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 407.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 407.5 Tm (Built, tested, and documented 40+ REST APIs using Postman \(95% test coverage\); reduced integration bugs by 60%.) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 407.5 Tm (Built, tested, and documented 90+ REST APIs using Postman; achieved high API test coverage and resolved CORS issues.) Tj ET
 BT /F1 7.5 Tf 0.02 0.52 0.78 rg 1 0 0 1 44 397.5 Tm (>) Tj ET
-BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 397.5 Tm (Optimized database queries and implemented strategic indexing, reducing query response time from 2.5s to 350ms \(86%\).) Tj ET
+BT /F1 7.5 Tf 0.2 0.25 0.3 rg 1 0 0 1 54 397.5 Tm (Optimized database queries and implemented strategic indexing, significantly improving database query response times.) Tj ET
 BT /F2 10 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 383.5 Tm (EDUCATION & PROBLEM SOLVING) Tj ET
 0.02 0.52 0.78 RG 1 w 36 380.5 m 559 380.5 l S
 BT /F2 8.5 Tf 0.06 0.09 0.16 rg 1 0 0 1 36 368.5 Tm (B.Tech in Computer Science Engineering \(AI & ML\)) Tj ET
@@ -102,14 +102,14 @@ xref
 0 8
 0000000000 65535 f 
 0000000009 00000 n 
-0000007912 00000 n 
-0000007982 00000 n 
-0000008057 00000 n 
-0000008135 00000 n 
-0000008281 00000 n 
-0000008338 00000 n 
+0000007889 00000 n 
+0000007959 00000 n 
+0000008034 00000 n 
+0000008112 00000 n 
+0000008258 00000 n 
+0000008315 00000 n 
 trailer
 << /Size 8 /Root 7 0 R >>
 startxref
-8387
+8364
 %%EOF
