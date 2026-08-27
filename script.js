@@ -177,6 +177,16 @@ function renderProjects() {
       </li>
     `).join('');
 
+    const metricHighlight = project.id === 'healthcare-bot'
+      ? `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
+           <span class="badge badge-spring" style="font-size: 0.75rem;">🛡️ 99.2% Triage Accuracy</span>
+           <span class="badge" style="font-size: 0.75rem;">⚡ 1.2s Load Time (67% Boost)</span>
+         </div>`
+      : `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
+           <span class="badge badge-spring" style="font-size: 0.75rem;">📦 10,000+ Daily Shipments</span>
+           <span class="badge" style="font-size: 0.75rem;">⚡ 120ms API Latency (85% Boost)</span>
+         </div>`;
+
     card.innerHTML = `
       <div class="project-banner">
         <div class="banner-pattern"></div>
@@ -187,6 +197,7 @@ function renderProjects() {
       </div>
       <div class="project-content">
         <h3 class="project-title">${project.title}</h3>
+        ${metricHighlight}
         <p class="project-desc">${project.shortDesc}</p>
         
         <ul class="project-bullets">
@@ -198,7 +209,7 @@ function renderProjects() {
         </div>
 
         <div class="project-actions">
-          <button class="btn btn-primary btn-sm" onclick="openInteractiveDemo('${project.interactiveType}')">
+          <button class="btn btn-primary btn-sm" onclick="openInteractiveDemo('${project.interactiveType}')" style="width: 100%; color: #fff;">
             <span>⚡</span> ${project.interactiveLabel}
           </button>
         </div>
@@ -219,18 +230,33 @@ function renderEducationAndCertifications() {
     const edu = portfolioData.education[0];
     eduContainer.innerHTML = `
       <div class="card" style="border-left: 4px solid var(--accent-cyan);">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-          <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">${edu.degree}</h3>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">${edu.degree}</h3>
+            <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem; margin-top: 0.25rem;">
+              ${edu.institution}
+            </p>
+          </div>
           <span class="badge" style="font-size: 0.8rem;">${edu.period}</span>
         </div>
-        <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;">
-          ${edu.institution}
-        </p>
+        
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.75rem;">
           📍 ${edu.location}
         </p>
-        <div style="display: inline-block; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 8px; font-size: 0.9rem;">
+
+        <div style="display: inline-block; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 8px; font-size: 0.9rem; margin-bottom: 1rem;">
           🎓 ${edu.score}
+        </div>
+
+        <div style="border-top: 1px solid var(--border-color); padding-top: 0.85rem;">
+          <span style="font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; display: block; margin-bottom: 0.4rem;">Core Computer Science Coursework:</span>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+            <span class="badge" style="font-size: 0.75rem;">Data Structures &amp; Algorithms</span>
+            <span class="badge" style="font-size: 0.75rem;">Object Oriented Programming</span>
+            <span class="badge" style="font-size: 0.75rem;">DBMS &amp; SQL</span>
+            <span class="badge" style="font-size: 0.75rem;">Operating Systems</span>
+            <span class="badge" style="font-size: 0.75rem;">Computer Networks</span>
+          </div>
         </div>
       </div>
     `;
