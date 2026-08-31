@@ -1,5 +1,5 @@
 /* ==========================================================================
-   S.N. MOURYA - RESUME DATA STORE (UPDATED & REFINED)
+   S.N. MOURYA - RESUME DATA STORE (EXACT SYNC WITH LATEST RESUME)
    ========================================================================== */
 
 const portfolioData = {
@@ -12,81 +12,89 @@ const portfolioData = {
     github: "https://github.com/snmourya2005",
     linkedin: "https://www.linkedin.com/in/mourya-sn-1011792b6/",
     leetcode: "https://leetcode.com/u/ytUtdYUYwr/",
-    profileSummary: "Results-driven Java Full Stack Developer with hands-on experience designing and shipping 2+ production-grade full-stack web applications. Strong expertise in building scalable backend systems with Spring Boot REST APIs and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks, implement deterministic systems for mission-critical applications, and deliver end-to-end solutions from architecture to deployment. Solid foundation in Data Structures & Algorithms with proficiency in core Java (OOP, Multithreading, Collections).",
+    profileSummary: "Aspiring Java Full Stack Developer with hands-on experience building full-stack web applications using React.js, Spring Boot, and MySQL. Strong grasp of core Java (OOP, Collections, Exception Handling, Multithreading) with practical skills in REST API design, frontend-backend integration, and resolving CORS/API issues. Strong foundation in Data Structures & Algorithms and a track record of shipping working full-stack projects.",
     stats: [
-      { number: "90+", label: "REST APIs Developed & Tested" },
+      { number: "90+", label: "REST APIs Built & Tested (Postman)" },
       { number: "2+", label: "Production Full-Stack Projects" },
-      { number: "120ms", label: "Optimized Backend Latency" },
-      { number: "100%", label: "Deterministic Safety & Fallback" }
+      { number: "7.57", label: "B.Tech Engineering CGPA" },
+      { number: "100%", label: "Deterministic Java Rule Safety" }
     ]
   },
 
   skills: [
     {
-      category: "Core Java & Backend",
+      category: "Languages & Core Java",
       icon: "☕",
-      skills: ["Core Java", "OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)", "Collections Framework", "Exception Handling", "Multithreading", "Java 8 Streams", "String Handling", "Spring Boot", "RESTful APIs", "Spring Data JPA", "Hibernate/JPA", "MVC Architecture", "Spring AI"]
+      skills: [
+        "Java", "SQL", "JavaScript",
+        "OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)",
+        "Collections Framework", "Exception Handling",
+        "Multithreading", "String Handling", "Java 8 Streams"
+      ]
     },
     {
       category: "Frontend Development",
       icon: "⚛️",
-      skills: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Axios", "State Management", "Responsive Design", "DOM Manipulation", "UI Component Design"]
+      skills: ["HTML", "CSS", "JavaScript", "React.js", "Axios", "Responsive UI", "Component Lifecycle"]
     },
     {
-      category: "Databases & Schema Design",
+      category: "Backend & Databases",
       icon: "🗄️",
-      skills: ["MySQL", "Oracle SQL", "Database Normalization", "Query Optimization", "Strategic Indexing", "Relational Schema Modeling", "CRUD Operations"]
+      skills: ["Spring Boot", "REST APIs", "Hibernate/JPA", "Spring Data JPA", "MySQL", "Oracle SQL", "Relational Schema Design"]
     },
     {
-      category: "Tools, DevOps & Practices",
+      category: "Cloud, Security & Tools",
       icon: "🛠️",
-      skills: ["Git", "GitHub", "Postman (90+ APIs Tested)", "Maven", "Docker", "OpenAPI / Swagger", "AWS (Basics)", "Agile / SCRUM", "CORS Configuration"]
+      skills: [
+        "Git", "GitHub", "Postman", "Maven", "Docker",
+        "OpenAPI/Swagger", "Agile", "Microsoft Azure",
+        "Microservices", "Spring Security", "JWT (JSON Web Tokens)", "JUnit 5"
+      ]
     }
   ],
 
   dsaTopics: [
-    { name: "Arrays & Strings", icon: "📊" },
+    { name: "Arrays", icon: "📊" },
+    { name: "Strings", icon: "🔤" },
     { name: "Linked Lists", icon: "🔗" },
-    { name: "Stacks & Queues", icon: "🥞" },
+    { name: "Stacks", icon: "🥞" },
+    { name: "Queues", icon: "🚶" },
     { name: "Hashing & HashMaps", icon: "🔑" },
-    { name: "Sets & Collections", icon: "📦" },
+    { name: "Sets", icon: "📦" },
     { name: "Searching & Sorting", icon: "🔍" },
-    { name: "Recursion & Backtracking", icon: "🔄" },
-    { name: "Trees & Graphs", icon: "🌳" },
-    { name: "Dynamic Programming", icon: "⚡" },
-    { name: "Object Oriented Design", icon: "📐" }
+    { name: "Recursion", icon: "🔄" }
   ],
 
   projects: [
     {
       id: "healthcare-bot",
       title: "AI Health Triage & Symptom Assessment Platform",
-      badge: "Featured AI & Full-Stack",
-      tech: ["Spring Boot", "React.js", "Java Rule Engine", "AI/LLM Integration", "OpenAPI/Swagger", "Docker"],
-      shortDesc: "Enterprise-grade AI-assisted triage platform with deterministic Java rule safety, eliminating LLM hallucinations and classifying medical urgency.",
+      badge: "AI & Full-Stack Platform",
+      tech: ["Spring Boot", "React", "Java Rule Engine", "AI/LLM Integration", "OpenAPI/Swagger", "Docker", "SpringSecurity-JWT"],
+      shortDesc: "Enterprise-grade AI health triage platform with natural language symptom extraction and multi-provider AI abstraction (OpenAI, Gemini, Spring AI).",
       bullets: [
-        "Architected enterprise-grade AI health triage platform; designed multi-provider AI abstraction layer supporting OpenAI, Gemini, and Spring AI with seamless fallback mechanisms.",
-        "Engineered deterministic Java Rule Engine (HealthRuleEngine) eliminating 100% of LLM hallucinations; implemented 15+ medical classification rules for robust triage urgency classification (Emergency, Urgent, Self-Care).",
-        "Built 100% offline fallback service with Jakarta @Valid input validation ensuring zero service downtime; created interactive OpenAPI 3.1 Swagger documentation reducing API integration time.",
-        "Developed responsive React UI with interactive triage cards, structured home remedies database, and specialist doctor referrals; optimized frontend load time to 1.2s for frictionless interaction."
+        "Architected enterprise-grade AI health triage platform with natural language symptom extraction and multi-provider AI abstraction (OpenAI, Gemini, Spring AI).",
+        "Implemented deterministic Java Rule Engine eliminating LLM hallucinations and classifying triage urgency (Emergency Red Flag, Urgent, Self-Care).",
+        "Built 100% offline fallback service, Jakarta @Valid input validation, and interactive OpenAPI 3.1 Swagger documentation.",
+        "Developed responsive React UI with interactive triage cards, structured home remedies, and specialist doctor referrals."
       ],
       interactiveType: "chatbot",
-      interactiveLabel: "🚀 Test Live AI Triage Demo"
+      interactiveLabel: "🚀 Test AH Live Demo"
     },
     {
       id: "courier-logistics",
       title: "Courier Logistics & Shipment Tracking System",
       badge: "Full-Stack Enterprise Logistics",
-      tech: ["Spring Boot", "React.js", "MySQL", "Hibernate/JPA", "REST APIs", "Axios", "WebSocket"],
-      shortDesc: "Full-scale logistics management platform with dynamic pricing engine, real-time visual package tracking, and Spring Boot REST APIs.",
+      tech: ["Spring Boot", "React.js", "MySQL", "Hibernate/JPA", "REST APIs", "Axios"],
+      shortDesc: "Full-stack logistics platform with dynamic shipping rate calculations, multi-step shipment booking wizard, and customer CRM.",
       bullets: [
-        "Developed full-stack logistics platform; designed dynamic pricing engine calculating 50+ rate factors, reducing pricing errors and operational support overhead.",
-        "Implemented 20+ RESTful APIs with consistent error handling and request validation; optimized API response time from 800ms to 120ms through database query optimization and caching strategies.",
-        "Built real-time package tracking UI with interactive milestone steppers (Order Placed → In Transit → Delivered); implemented WebSocket communication reducing tracking update latency from 5s to 200ms.",
-        "Designed normalized MySQL relational schema supporting high concurrent throughput; implemented strategic database indexing improving complex join query performance and reducing server load."
+        "Developed full-stack logistics platform with dynamic shipping rate calculations, multi-step shipment booking wizard, and customer CRM.",
+        "Implemented 40+ RESTful APIs managing consignments, warehouse routing hubs, delivery fleet assignment, and billing settlements.",
+        "Built real-time package tracking UI with interactive visual milestone steppers and printable consignment receipts.",
+        "Designed normalized MySQL relational schema using Spring Data JPA with entity relationships for packages, tracking history waypoints, and delivery agents."
       ],
       interactiveType: "logistics-explorer",
-      interactiveLabel: "🚀 Test Live Tracking & Logistics Demo"
+      interactiveLabel: "🚀 Test CL Live Demo"
     }
   ],
 
@@ -94,12 +102,12 @@ const portfolioData = {
     {
       role: "Full Stack Developer Intern",
       company: "JSpiders",
-      location: "BTM Layout, Bengaluru",
-      period: "6 months",
+      location: "BTM Bengaluru",
+      period: "January 2026 – August 2026",
       highlights: [
-        "Developed 5 full-stack web applications in agile SCRUM sprints collaborating with cross-functional teams; shipped production-ready features across multiple web applications.",
-        "Built, tested, and documented 90+ REST APIs using Postman; achieved high API test coverage and resolved critical CORS/authentication bottlenecks, reducing integration bugs.",
-        "Optimized database queries and implemented strategic indexing, significantly improving database query response times; led code reviews ensuring adherence to REST API best practices."
+        "Developed full-stack applications using React.js and Spring Boot as part of a collaborative development team.",
+        "Built and tested 90+ REST APIs using Postman; handled frontend-backend integration end to end.",
+        "Resolved CORS and API connectivity issues, and worked with SQL databases to support application data needs."
       ]
     }
   ],
@@ -110,30 +118,30 @@ const portfolioData = {
       institution: "Anantha Lakshmi Institute of Technology and Sciences",
       location: "Anantapur",
       period: "2022 – 2026",
-      score: "Aggregate: 75.5%"
+      score: "CGPA : 7.57"
     }
   ],
 
   certifications: [
     {
       title: "Java Full Stack Development Certification",
-      issuer: "Udemy (Advanced REST APIs & Spring Security)",
+      issuer: "Udemy",
       icon: "📜"
     },
     {
       title: "AI-ML Virtual Internship",
-      issuer: "EduSkills Academy (NLP & Machine Learning Models)",
+      issuer: "EduSkills Academy",
       icon: "🤖"
     },
     {
-      title: "Prompt Engineering Certification",
-      issuer: "ExcelR (LLM Integration & API Design)",
-      icon: "💡"
+      title: "Participant, Smart India Hackathon",
+      issuer: "Smart India Hackathon",
+      icon: "🏆"
     },
     {
-      title: "Participant, Smart India Hackathon (SIH 2024)",
-      issuer: "Built innovative solution for real-world problem",
-      icon: "🏆"
+      title: "Prompt Engineering Certification",
+      issuer: "ExcelR",
+      icon: "💡"
     }
   ]
 };

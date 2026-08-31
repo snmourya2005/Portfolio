@@ -23,10 +23,10 @@ function initTypingEffect() {
   const roles = [
     "Java Full Stack Developer",
     "Spring Boot & REST API Specialist (90+ APIs)",
-    "React.js Frontend Architect",
+    "React.js Frontend Developer",
+    "Spring Security & JWT Authentication",
     "Deterministic Rule Engines & Spring AI",
-    "MySQL Database Query & Schema Optimizer",
-    "B.Tech CSE (AI & ML)"
+    "B.Tech CSE (AI & ML) | CGPA: 7.57"
   ];
 
   let roleIndex = 0;

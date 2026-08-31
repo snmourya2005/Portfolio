@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Resume data for S.N. Mourya (Refined & Updated)
+// Resume data for S.N. Mourya (Exact Sync with Latest Resume)
 const profile = {
   name: "S.N. MOURYA",
   role: "Java Full Stack Developer",
@@ -10,61 +10,59 @@ const profile = {
   github: "https://github.com/snmourya2005",
   linkedin: "https://www.linkedin.com/in/mourya-sn-1011792b6/",
   leetcode: "https://leetcode.com/u/ytUtdYUYwr/",
-  summary: "Results-driven Java Full Stack Developer with hands-on experience designing and shipping 2+ production-grade full-stack web applications. Strong expertise in building scalable backend systems with Spring Boot REST APIs and dynamic frontends with React.js. Proven ability to eliminate performance bottlenecks, implement deterministic systems for mission-critical applications, and deliver end-to-end solutions from architecture to deployment. Solid foundation in Data Structures & Algorithms with proficiency in core Java (OOP, Multithreading, Collections).",
+  summary: "Aspiring Java Full Stack Developer with hands-on experience building full-stack web applications using React.js, Spring Boot, and MySQL. Strong grasp of core Java (OOP, Collections, Exception Handling, Multithreading) with practical skills in REST API design, frontend-backend integration, and resolving CORS/API issues. Strong foundation in Data Structures & Algorithms and a track record of shipping working full-stack projects.",
   skills: {
-    languages: ["Java", "SQL", "JavaScript", "HTML5", "CSS3"],
-    coreJava: ["OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)", "Collections Framework", "Exception Handling", "Multithreading", "Streams", "String Handling"],
-    frontend: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Axios", "State Management", "Responsive Design"],
-    backend: ["Spring Boot", "RESTful APIs", "Spring Data JPA", "Hibernate/JPA", "MVC Architecture", "Spring AI"],
-    databases: ["MySQL", "Oracle SQL", "Database Normalization", "Query Optimization", "Relational Schema Modeling"],
-    tools: ["Git", "GitHub", "Postman (90+ APIs Tested)", "Maven", "Docker", "OpenAPI/Swagger", "AWS (Basics)", "Agile/SCRUM"]
+    languages: ["Java", "SQL", "JavaScript"],
+    coreJava: ["OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)", "Collections Framework", "Exception Handling", "Multithreading", "String Handling", "Java 8 Streams"],
+    frontend: ["HTML", "CSS", "JavaScript", "React.js"],
+    backend: ["Spring Boot", "REST APIs", "Hibernate/JPA"],
+    databases: ["MySQL", "Oracle SQL"],
+    cloudTools: ["Git", "GitHub", "Postman", "Maven", "Docker", "OpenAPI/Swagger", "Agile", "Microsoft Azure", "Microservices", "Spring Security", "JWT (JSON Web Tokens)", "JUnit 5"]
   },
   projects: [
     {
-      title: "AI Health Triage & Symptom Assessment Platform",
-      stack: "Spring Boot, React.js, Java Rule Engine, AI/LLM Integration, OpenAPI/Swagger, Docker",
-      badge: "Featured AI & Full-Stack",
+      title: "AI Health Triage & Symptom Assessment Platform | AH Live Demo",
+      technologies: "Spring Boot, React, Java Rule Engine, AI/LLM Integration, OpenAPI/Swagger, Docker, SpringSecurity-JWT",
       points: [
-        "Architected enterprise-grade AI health triage platform; designed multi-provider AI abstraction layer supporting OpenAI, Gemini, and Spring AI with seamless fallback mechanisms.",
-        "Engineered deterministic Java Rule Engine (HealthRuleEngine) eliminating 100% of LLM hallucinations; implemented 15+ medical classification rules for robust triage urgency classification (Emergency, Urgent, Self-Care).",
-        "Built 100% offline fallback service with Jakarta @Valid input validation ensuring zero service downtime; created interactive OpenAPI 3.1 Swagger documentation reducing API integration time.",
-        "Developed responsive React UI with interactive triage cards, structured home remedies database, and specialist doctor referrals; optimized frontend load time to 1.2s for frictionless interaction."
+        "Architected enterprise-grade AI health triage platform with natural language symptom extraction and multi-provider AI abstraction (OpenAI, Gemini, Spring AI).",
+        "Implemented deterministic Java Rule Engine eliminating LLM hallucinations and classifying triage urgency (Emergency Red Flag, Urgent, Self-Care).",
+        "Built 100% offline fallback service, Jakarta @Valid input validation, and interactive OpenAPI 3.1 Swagger documentation.",
+        "Developed responsive React UI with interactive triage cards, structured home remedies, and specialist doctor referrals."
       ]
     },
     {
-      title: "Courier Logistics & Shipment Tracking System",
-      stack: "Spring Boot, React.js, MySQL, Hibernate/JPA, REST APIs, Axios, WebSocket",
-      badge: "Full-Stack Enterprise Logistics",
+      title: "Courier Logistics & Shipment Tracking System | CL Live Demo",
+      technologies: "Spring Boot, React.js, MySQL, Hibernate/JPA, REST APIs, Axios",
       points: [
-        "Developed full-stack logistics platform; designed dynamic pricing engine calculating 50+ rate factors, reducing pricing errors and operational support overhead.",
-        "Implemented 20+ RESTful APIs with consistent error handling and request validation; optimized API response time from 800ms to 120ms through database query optimization and caching strategies.",
-        "Built real-time package tracking UI with interactive milestone steppers (Order Placed → In Transit → Delivered); implemented WebSocket communication reducing tracking update latency from 5s to 200ms.",
-        "Designed normalized MySQL relational schema supporting high concurrent throughput; implemented strategic database indexing improving complex join query performance and reducing server load."
+        "Developed full-stack logistics platform with dynamic shipping rate calculations, multi-step shipment booking wizard, and customer CRM.",
+        "Implemented 40+ RESTful APIs managing consignments, warehouse routing hubs, delivery fleet assignment, and billing settlements.",
+        "Built real-time package tracking UI with interactive visual milestone steppers and printable consignment receipts.",
+        "Designed normalized MySQL relational schema using Spring Data JPA with entity relationships for packages, tracking history waypoints, and delivery agents."
       ]
     }
   ],
   internship: {
     role: "Full Stack Developer Intern",
-    company: "JSpiders (BTM Layout, Bengaluru)",
-    duration: "6 months",
+    company: "JSpiders | BTM Bengaluru",
+    duration: "January 2026 – August 2026",
     points: [
-      "Developed 5 full-stack web applications in agile SCRUM sprints collaborating with cross-functional teams; shipped production-ready features across multiple web applications.",
-      "Built, tested, and documented 90+ REST APIs using Postman; achieved comprehensive API test coverage and resolved critical CORS/authentication bottlenecks, reducing integration bugs.",
-      "Optimized database queries and implemented strategic indexing, significantly improving database query response times; led code reviews ensuring adherence to REST API best practices."
+      "Developed full-stack applications using React.js and Spring Boot as part of a collaborative development team.",
+      "Built and tested 90+ REST APIs using Postman; handled frontend-backend integration end to end.",
+      "Resolved CORS and API connectivity issues, and worked with SQL databases to support application data needs."
     ]
   },
   education: {
     degree: "B.Tech in Computer Science Engineering (AI & ML)",
     college: "Anantha Lakshmi Institute of Technology and Sciences, Anantapur",
     timeline: "2022 – 2026",
-    aggregate: "75.5%"
+    score: "CGPA : 7.57"
   },
-  dsa: "Arrays, Strings, Linked Lists, Stacks, Queues, Hashing, HashMaps, Sets, Searching, Sorting, Recursion, Trees, Graphs, Dynamic Programming",
+  dsa: "Arrays, Strings, Linked Lists, Stacks, Queues, Hashing, HashMaps, Sets, Searching, Sorting, Recursion",
   certifications: [
-    "Java Full Stack Development Certification — Udemy (Advanced REST APIs & Spring Security)",
-    "AI-ML Virtual Internship — EduSkills Academy (NLP & Machine Learning Models)",
-    "Prompt Engineering Certification — ExcelR (LLM Integration & API Design)",
-    "Participant, Smart India Hackathon (SIH 2024) — Built innovative solution for real-world problem"
+    "Java Full Stack Development Certification — Udemy",
+    "Participant, Smart India Hackathon",
+    "AI-ML Virtual Internship — EduSkills Academy",
+    "Prompt Engineering Certification — ExcelR"
   ]
 };
 
@@ -143,11 +141,8 @@ export default function App() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
           {profile.projects.map((p, idx) => (
             <div key={idx} style={{ background: 'rgba(15,23,42,0.7)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 24 }}>
-              <span style={{ fontSize: '0.75rem', background: 'rgba(6,182,212,0.15)', color: '#38bdf8', padding: '3px 10px', borderRadius: 12, border: '1px solid rgba(6,182,212,0.3)', display: 'inline-block', marginBottom: 10 }}>
-                {p.badge}
-              </span>
-              <h3 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: 8 }}>{p.title}</h3>
-              <p style={{ color: '#06b6d4', fontSize: '0.85rem', marginBottom: 16 }}>{p.stack}</p>
+              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: 8 }}>{p.title}</h3>
+              <p style={{ color: '#06b6d4', fontSize: '0.85rem', marginBottom: 16 }}>{p.technologies}</p>
               <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.6 }}>
                 {p.points.map((pt, pIdx) => <li key={pIdx} style={{ marginBottom: 8 }}>{pt}</li>)}
               </ul>
@@ -168,14 +163,15 @@ export default function App() {
         </div>
 
         <div style={{ background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 24 }}>
-          <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: 12 }}>Education &amp; Certifications</h3>
+          <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: 12 }}>Education &amp; Problem Solving</h3>
           <h4 style={{ color: '#38bdf8', fontSize: '1rem', marginBottom: 4 }}>{profile.education.degree}</h4>
           <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: 8 }}>{profile.education.college} ({profile.education.timeline})</p>
           <span style={{ display: 'inline-block', background: 'rgba(16,185,129,0.15)', color: '#34d399', padding: '4px 10px', borderRadius: 8, fontSize: '0.85rem', fontWeight: 700, marginBottom: 16 }}>
-            🎓 Aggregate: {profile.education.aggregate}
+            🎓 {profile.education.score}
           </span>
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 12 }}>
-            <h5 style={{ fontSize: '0.9rem', color: '#fff', marginBottom: 8 }}>Key Certifications:</h5>
+            <h5 style={{ fontSize: '0.9rem', color: '#fff', marginBottom: 8 }}>DSA &amp; Certifications:</h5>
+            <p style="color: #cbd5e1; font-size: 0.82rem; margin-bottom: 8px;">{profile.dsa}</p>
             <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.85rem', lineHeight: 1.6 }}>
               {profile.certifications.map((c, i) => <li key={i}>{c}</li>)}
             </ul>
