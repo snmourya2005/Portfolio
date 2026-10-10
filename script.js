@@ -22,10 +22,10 @@ function initTypingEffect() {
 
   const roles = [
     "Java Full Stack Developer",
-    "Spring Boot & REST API Specialist (90+ APIs)",
-    "React.js Frontend Developer",
-    "Spring Security & JWT Authentication",
-    "Deterministic Rule Engines & Spring AI",
+    "Spring Boot & Microservices Architect",
+    "React.js & AI Integration Specialist",
+    "Spring AI, OpenAI & Gemini APIs",
+    "90+ REST APIs Built & Validated",
     "B.Tech CSE (AI & ML) | CGPA: 7.57"
   ];
 
@@ -178,13 +178,13 @@ function renderProjects() {
     `).join('');
 
     const metricHighlight = project.id === 'healthcare-bot'
-      ? `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
+      ? `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
            <span class="badge badge-spring" style="font-size: 0.75rem;">🛡️ Deterministic Rule Safety</span>
-           <span class="badge" style="font-size: 0.75rem;">⚡ 1.2s Load Time</span>
+           <span class="badge" style="font-size: 0.75rem;">🧠 Spring AI + OpenAI &amp; Gemini</span>
          </div>`
-      : `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
-           <span class="badge badge-spring" style="font-size: 0.75rem;">📦 Real-Time Logistics Tracking</span>
-           <span class="badge" style="font-size: 0.75rem;">⚡ 120ms Backend Latency</span>
+      : `<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
+           <span class="badge badge-spring" style="font-size: 0.75rem;">📦 40+ RESTful APIs</span>
+           <span class="badge" style="font-size: 0.75rem;">⚡ Real-Time Tracking UI</span>
          </div>`;
 
     card.innerHTML = `
@@ -196,7 +196,12 @@ function renderProjects() {
         </div>
       </div>
       <div class="project-content">
-        <h3 class="project-title">${project.title}</h3>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.35rem; flex-wrap: wrap;">
+          <h3 class="project-title" style="margin-bottom: 0;">${project.title}</h3>
+          <a href="${project.liveUrl}" target="_blank" rel="noreferrer" class="badge" style="background: rgba(6, 182, 212, 0.2); border: 1px solid var(--accent-cyan); color: #38bdf8; text-decoration: none; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 6px;">
+            🌐 ${project.demoName} ↗
+          </a>
+        </div>
         ${metricHighlight}
         <p class="project-desc">${project.shortDesc}</p>
         
@@ -208,9 +213,12 @@ function renderProjects() {
           ${techTags}
         </div>
 
-        <div class="project-actions">
-          <button class="btn btn-primary btn-sm" onclick="openInteractiveDemo('${project.interactiveType}')" style="width: 100%; color: #fff;">
-            <span>⚡</span> ${project.interactiveLabel}
+        <div class="project-actions" style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem;">
+          <a href="${project.liveUrl}" target="_blank" rel="noreferrer" class="btn btn-primary btn-sm" style="flex: 1; text-align: center; color: #fff; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; background: linear-gradient(135deg, #06b6d4, #6366f1); font-weight: 700;">
+            <span>🚀</span> ${project.demoName}
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="openInteractiveDemo('${project.interactiveType}')" style="flex: 1; color: #fff; border-color: rgba(255,255,255,0.2);">
+            <span>⚡</span> Simulator
           </button>
         </div>
       </div>

@@ -1,68 +1,74 @@
 import React, { useState } from 'react';
 
-// Resume data for S.N. Mourya (Exact Sync with Latest Resume)
+// Resume data for S.N. Mourya (Verbatim Sync with Latest Resume)
 const profile = {
   name: "S.N. MOURYA",
-  role: "Java Full Stack Developer",
+  role: "Java Full Stack Developer | Spring Boot, Microservices, React.js & AI Integration",
   location: "Bengaluru, India (Open to Relocate)",
   phone: "+91 8688610728",
   email: "s.n.mourya2005@gmail.com",
   github: "https://github.com/snmourya2005",
-  linkedin: "https://www.linkedin.com/in/mourya-sn-1011792b6/",
-  leetcode: "https://leetcode.com/u/ytUtdYUYwr/",
-  summary: "Aspiring Java Full Stack Developer with hands-on experience building full-stack web applications using React.js, Spring Boot, and MySQL. Strong grasp of core Java (OOP, Collections, Exception Handling, Multithreading) with practical skills in REST API design, frontend-backend integration, and resolving CORS/API issues. Strong foundation in Data Structures & Algorithms and a track record of shipping working full-stack projects.",
+  linkedin: "https://www.linkedin.com/in/mourya-sn-1011792b6",
+  leetcode: "https://leetcode.com/u/ytUtdYUYwr",
+  portfolioUrl: "https://portfolio-mocha-theta-14.vercel.app/",
+  summary: "Versatile Java Full Stack Developer (B.Tech in CSE – AI & ML, 2022–2026, ALTS, Anantapur; CGPA: 7.57, First Class with Distinction) with hands-on expertise building enterprise full-stack web applications and microservices using Java, Spring Boot, React.js, and SQL, alongside modern Generative AI / LLM integration (Spring AI, OpenAI & Gemini APIs). Strong grasp of Core Java (OOP, Collections Framework, Multithreading, Streams API) with practical skills in REST API architecture, Hibernate/JPA, and secure JWT authorization. Strong foundation in Data Structures & Algorithms on LeetCode, combined with 8 months of software development internship experience from JSpiders Bengaluru, with a proven track record of shipping production-grade full-stack and AI-augmented applications.",
   skills: {
-    languages: ["Java", "SQL", "JavaScript"],
-    coreJava: ["OOP (Inheritance, Polymorphism, Abstraction, Encapsulation)", "Collections Framework", "Exception Handling", "Multithreading", "String Handling", "Java 8 Streams"],
-    frontend: ["HTML", "CSS", "JavaScript", "React.js"],
-    backend: ["Spring Boot", "REST APIs", "Hibernate/JPA"],
-    databases: ["MySQL", "Oracle SQL"],
-    cloudTools: ["Git", "GitHub", "Postman", "Maven", "Docker", "OpenAPI/Swagger", "Agile", "Microsoft Azure", "Microservices", "Spring Security", "JWT (JSON Web Tokens)", "JUnit 5"]
+    coreJava: ["Java (Core Java)", "OOP Principles: Inheritance, Polymorphism, Abstraction, Encapsulation", "Collections Framework", "Multithreading", "Concurrency", "Exception Handling", "Java 8 Streams", "Generics"],
+    backend: ["Spring Boot", "Spring MVC", "RESTful APIs", "Microservices Architecture", "Hibernate ORM", "Spring Data JPA", "Spring Security", "JWT (JSON Web Tokens)", "OpenAPI 3.1 / Swagger", "Postman"],
+    ai: ["Spring AI", "OpenAI & Gemini API Integration", "Prompt Engineering (ExcelR Certified)", "RAG Architecture", "Vector Embeddings", "Multi-Provider AI Abstraction", "JSON/POJO Structured Output Parsing", "Deterministic Fallbacks"],
+    frontend: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Responsive Design", "Axios", "Client-Server Data Binding", "Webhooks", "CORS Configuration"],
+    databases: ["MySQL", "PostgreSQL", "Oracle SQL", "Relational Schema Normalization", "Complex SQL Queries", "ACID Transactions", "MongoDB"],
+    cloudDevOps: ["Docker Containerization", "Microsoft Azure Cloud Basics", "Git", "GitHub", "Maven", "JUnit 5", "Mockito", "Agile/Scrum Methodologies"]
   },
   projects: [
     {
-      title: "AI Health Triage & Symptom Assessment Platform | AH Live Demo",
-      technologies: "Spring Boot, React, Java Rule Engine, AI/LLM Integration, OpenAPI/Swagger, Docker, SpringSecurity-JWT",
+      title: "AI Health Triage & Symptom Assessment Platform",
+      demoName: "AH Live Demo",
+      liveUrl: "https://ai-health-checker-frontend.vercel.app/",
+      technologies: "Spring Boot, React.js, Spring AI / LLM APIs (OpenAI, Gemini), Java Rule Engine, OpenAPI 3.1, Docker, Spring Security, JWT",
       points: [
-        "Architected enterprise-grade AI health triage platform with natural language symptom extraction and multi-provider AI abstraction (OpenAI, Gemini, Spring AI).",
-        "Implemented deterministic Java Rule Engine eliminating LLM hallucinations and classifying triage urgency (Emergency Red Flag, Urgent, Self-Care).",
-        "Built 100% offline fallback service, Jakarta @Valid input validation, and interactive OpenAPI 3.1 Swagger documentation.",
-        "Developed responsive React UI with interactive triage cards, structured home remedies, and specialist doctor referrals."
+        "Architected an enterprise-grade AI health triage platform integrating Spring AI with OpenAI & Gemini APIs for natural language symptom extraction and multi-provider AI abstraction.",
+        "Implemented a high-precision deterministic Java Rule Engine that validates LLM responses, eliminates clinical hallucinations, and classifies triage urgency (Emergency Red Flag, Urgent, Self-Care).",
+        "Engineered a 100% offline fallback circuit breaker in Java with Jakarta @Valid request validation and interactive OpenAPI 3.1 Swagger documentation, ensuring zero downtime during API timeouts.",
+        "Developed a responsive React.js UI with dynamic triage cards, structured home care guidance, and specialist referral routing; containerized the multi-tier application using Docker."
       ]
     },
     {
-      title: "Courier Logistics & Shipment Tracking System | CL Live Demo",
-      technologies: "Spring Boot, React.js, MySQL, Hibernate/JPA, REST APIs, Axios",
+      title: "Courier Logistics & Shipment Tracking System",
+      demoName: "CL Live Demo",
+      liveUrl: "https://logistics-courier-front-end.vercel.app/",
+      technologies: "Spring Boot, React.js, MySQL, Hibernate/JPA, RESTful APIs, Axios, Docker, Git, JUnit 5",
       points: [
-        "Developed full-stack logistics platform with dynamic shipping rate calculations, multi-step shipment booking wizard, and customer CRM.",
-        "Implemented 40+ RESTful APIs managing consignments, warehouse routing hubs, delivery fleet assignment, and billing settlements.",
-        "Built real-time package tracking UI with interactive visual milestone steppers and printable consignment receipts.",
+        "Developed a full-stack logistics platform featuring dynamic shipping rate calculations, multi-step consignment booking wizard, and client CRM management.",
+        "Implemented 40+ secure RESTful APIs in Spring Boot managing consignments, warehouse transit hubs, delivery fleet assignment, and automated billing settlements.",
+        "Built real-time package tracking UI in React.js with interactive visual milestone steppers and printable consignment waybills.",
         "Designed normalized MySQL relational schema using Spring Data JPA with entity relationships for packages, tracking history waypoints, and delivery agents."
       ]
     }
   ],
   internship: {
     role: "Full Stack Developer Intern",
-    company: "JSpiders | BTM Bengaluru",
-    duration: "January 2026 – August 2026",
+    company: "JSpiders — BTM Bengaluru",
+    duration: "January 2026 – August 2026 (8 Months)",
     points: [
-      "Developed full-stack applications using React.js and Spring Boot as part of a collaborative development team.",
-      "Built and tested 90+ REST APIs using Postman; handled frontend-backend integration end to end.",
-      "Resolved CORS and API connectivity issues, and worked with SQL databases to support application data needs."
+      "Developed full-stack web applications using React.js and Spring Boot as part of a collaborative Agile development team.",
+      "Constructed, documented, and validated 90+ REST APIs using Postman; connected backend endpoints with frontend components end-to-end.",
+      "Resolved CORS configuration errors, API connectivity bottlenecks, and managed SQL database transactions to support core application workflows.",
+      "Participated in sprint reviews and code refactoring; utilized Git for collaborative version control and authored unit tests using JUnit 5."
     ]
   },
   education: {
     degree: "B.Tech in Computer Science Engineering (AI & ML)",
-    college: "Anantha Lakshmi Institute of Technology and Sciences, Anantapur",
+    college: "ALTS, Anantapur (Anantha Lakshmi Institute of Technology and Sciences)",
     timeline: "2022 – 2026",
-    score: "CGPA : 7.57"
+    score: "CGPA: 7.57 (First Class with Distinction, 0 Active Backlogs)"
   },
-  dsa: "Arrays, Strings, Linked Lists, Stacks, Queues, Hashing, HashMaps, Sets, Searching, Sorting, Recursion",
+  dsa: "Algorithmic Problem Solving on LeetCode: Proficient in Arrays, Strings, Linked Lists, Stacks, Queues, Hashing, HashMaps, Sets, Searching, Sorting, Two Pointers, Trees, Graphs, and Recursion. Strong focus on Big-O analysis and edge-case testing.",
   certifications: [
-    "Java Full Stack Development Certification — Udemy",
-    "Participant, Smart India Hackathon",
+    "Java Full Stack Development Certification — Udemy / JSpiders",
+    "Prompt Engineering Certification — ExcelR",
     "AI-ML Virtual Internship — EduSkills Academy",
-    "Prompt Engineering Certification — ExcelR"
+    "Participant, Smart India Hackathon — Rapid Prototyping"
   ]
 };
 
@@ -109,11 +115,11 @@ export default function App() {
           <h1 style={{ fontSize: '2.8rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.2 }}>
             Hi, I'm <span style={{ background: 'linear-gradient(135deg, #38bdf8, #818cf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>S.N. Mourya</span>
           </h1>
-          <p style={{ fontSize: '1.3rem', color: '#06b6d4', fontWeight: 600, marginBottom: 18 }}>Java Full Stack Developer</p>
+          <p style={{ fontSize: '1.15rem', color: '#06b6d4', fontWeight: 600, marginBottom: 18 }}>{profile.role}</p>
           <p style={{ color: '#94a3b8', lineHeight: 1.7, marginBottom: 25 }}>{profile.summary}</p>
           
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="#projects" style={{ background: 'linear-gradient(135deg, #06b6d4, #6366f1)', color: '#fff', padding: '12px 24px', borderRadius: 8, textDecoration: 'none', fontWeight: 600 }}>Explore Projects</a>
+            <a href="#projects" style={{ background: 'linear-gradient(135deg, #06b6d4, #6366f1)', color: '#fff', padding: '12px 24px', borderRadius: 8, textDecoration: 'none', fontWeight: 600 }}>Explore Projects &amp; Live Demos</a>
             <a href="SN_Mourya_Resume.pdf" download="SN_Mourya_Resume_Java_FullStack.pdf" style={{ background: '#1e293b', color: '#06b6d4', border: '1px solid #06b6d4', padding: '12px 20px', borderRadius: 8, textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
               <span>📥</span> Download Resume
             </a>
@@ -137,15 +143,27 @@ export default function App() {
 
       {/* Projects */}
       <section id="projects" style={{ maxWidth: 1100, margin: '80px auto', padding: '0 20px' }}>
-        <h2 style={{ fontSize: '2rem', textAlign: 'center', marginBottom: 40 }}>Featured Full-Stack Projects</h2>
+        <h2 style={{ fontSize: '2rem', textAlign: 'center', marginBottom: 40 }}>Enterprise Full Stack &amp; AI-Integrated Systems</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
           {profile.projects.map((p, idx) => (
-            <div key={idx} style={{ background: 'rgba(15,23,42,0.7)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 24 }}>
-              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: 8 }}>{p.title}</h3>
-              <p style={{ color: '#06b6d4', fontSize: '0.85rem', marginBottom: 16 }}>{p.technologies}</p>
-              <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                {p.points.map((pt, pIdx) => <li key={pIdx} style={{ marginBottom: 8 }}>{pt}</li>)}
-              </ul>
+            <div key={idx} style={{ background: 'rgba(15,23,42,0.7)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 24, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10, marginBottom: 8, flexWrap: 'wrap' }}>
+                  <h3 style={{ fontSize: '1.2rem', color: '#fff', margin: 0 }}>{p.title}</h3>
+                  <a href={p.liveUrl} target="_blank" rel="noreferrer" style={{ background: 'rgba(6,182,212,0.2)', border: '1px solid #06b6d4', color: '#38bdf8', padding: '3px 10px', borderRadius: 6, textDecoration: 'none', fontSize: '0.8rem', fontWeight: 700 }}>
+                    🌐 {p.demoName} ↗
+                  </a>
+                </div>
+                <p style={{ color: '#06b6d4', fontSize: '0.82rem', marginBottom: 16 }}>{p.technologies}</p>
+                <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.6 }}>
+                  {p.points.map((pt, pIdx) => <li key={pIdx} style={{ marginBottom: 8 }}>{pt}</li>)}
+                </ul>
+              </div>
+              <div style={{ marginTop: 20 }}>
+                <a href={p.liveUrl} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, width: '100%', background: 'linear-gradient(135deg, #06b6d4, #6366f1)', color: '#fff', padding: '10px 16px', borderRadius: 8, textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem', textAlign: 'center' }}>
+                  <span>🚀</span> Launch {p.demoName}
+                </a>
+              </div>
             </div>
           ))}
         </div>
@@ -158,21 +176,22 @@ export default function App() {
           <h4 style={{ color: '#38bdf8', fontSize: '1rem', marginBottom: 4 }}>{profile.internship.role}</h4>
           <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: 16 }}>{profile.internship.company} • {profile.internship.duration}</p>
           <ul style={{ paddingLeft: 18, color: '#cbd5e1', fontSize: '0.88rem', lineHeight: 1.6 }}>
-            {profile.internship.points.map((pt, i) => <li key={i} style={{ marginBottom: 6 }}>{pt}</li>)}
+            {profile.internship.points.map((pt, i) => <li key={i} style={{ marginBottom: 8 }}>{pt}</li>)}
           </ul>
         </div>
 
         <div style={{ background: 'rgba(15,23,42,0.6)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 24 }}>
-          <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: 12 }}>Education &amp; Problem Solving</h3>
+          <h3 style={{ fontSize: '1.3rem', color: '#fff', marginBottom: 12 }}>Education &amp; Credentials</h3>
           <h4 style={{ color: '#38bdf8', fontSize: '1rem', marginBottom: 4 }}>{profile.education.degree}</h4>
           <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: 8 }}>{profile.education.college} ({profile.education.timeline})</p>
           <span style={{ display: 'inline-block', background: 'rgba(16,185,129,0.15)', color: '#34d399', padding: '4px 10px', borderRadius: 8, fontSize: '0.85rem', fontWeight: 700, marginBottom: 16 }}>
             🎓 {profile.education.score}
           </span>
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 12 }}>
-            <h5 style={{ fontSize: '0.9rem', color: '#fff', marginBottom: 8 }}>DSA &amp; Certifications:</h5>
-            <p style="color: #cbd5e1; font-size: 0.82rem; margin-bottom: 8px;">{profile.dsa}</p>
-            <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.85rem', lineHeight: 1.6 }}>
+            <h5 style={{ fontSize: '0.9rem', color: '#fff', marginBottom: 6 }}>DSA Rigor &amp; LeetCode:</h5>
+            <p style={{ color: '#94a3b8', fontSize: '0.82rem', marginBottom: 10 }}>{profile.dsa}</p>
+            <h5 style={{ fontSize: '0.9rem', color: '#fff', marginBottom: 6 }}>Key Certifications:</h5>
+            <ul style={{ paddingLeft: 18, color: '#94a3b8', fontSize: '0.82rem', lineHeight: 1.5 }}>
               {profile.certifications.map((c, i) => <li key={i}>{c}</li>)}
             </ul>
           </div>
